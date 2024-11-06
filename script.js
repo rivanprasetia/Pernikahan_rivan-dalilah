@@ -1,5 +1,5 @@
 // Set tanggal pernikahan
-const weddingDate = new Date("December 12, 2024 10:00:00").getTime();
+const weddingDate = new Date("December 7, 2024 09:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
