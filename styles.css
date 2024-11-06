@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
+/*     font-family: Arial, sans-serif; */
+    font-family: 'Bad Script', cursive;
     text-align: center;
     background: #f3f4f6;
     color: #333;
@@ -46,4 +47,8 @@ button {
 
 button:hover {
     background-color: #4c51bf;
+}
+
+h1, h2 {
+    font-family: 'Bad Script', cursive;
 }
