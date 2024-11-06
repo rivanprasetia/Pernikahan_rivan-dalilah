@@ -18,7 +18,7 @@ section {
 }
 
 #countdown #timer div {
-    display: inline-block;
+    display: grid;
     margin: 0 10px;
     text-align: center;
     font-size: 18px;
