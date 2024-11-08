@@ -21,22 +21,7 @@
             <button id="confirm-button">Buka</button>
         </div>
     </div>
-    <script src="script.js">
-        const params = new URLSearchParams(window.location.search);
-        const name = params.get('name');
-        
-        // Cek apakah URL berisi parameter 'id' dengan nama
-        if (name && name.trim() !== '') {
-            sessionStorage.setItem('guestName', name);
-        } 
-
-        const confirmButton = document.getElementById('confirm-button');
-        if (confirmButton) {
-            confirmButton.addEventListener('click', () => {
-                window.location.href = 'index.html';
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 
