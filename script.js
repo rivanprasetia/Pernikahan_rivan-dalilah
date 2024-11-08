@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Logika untuk halaman konfirmasi
     if (window.location.pathname.includes('confirm.html')) {
         const params = new URLSearchParams(window.location.search);
-        const name = params.get('name');
+        const name = params.get('id');
 
         // Cek apakah URL berisi parameter 'id' dengan nama
         if (name && name.trim() !== '') {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Logika untuk halaman index
-    if (window.location.pathname.includes('/')) {
+    if (window.location.pathname.includes('/Pernikahan_rivan-dalilah/')) {
         const guestName = sessionStorage.getItem('guestName');
 
         // Decode URI jika data diambil dari parameter URL
