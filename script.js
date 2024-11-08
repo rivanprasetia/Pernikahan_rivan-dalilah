@@ -1,47 +1,47 @@
 
 // Set nama tamu
-//document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     // Logika untuk halaman konfirmasi
-//    if (window.location.pathname.includes('confirm.html')) {
-//        const params = new URLSearchParams(window.location.search);
-//        const name = params.get('name');
+    if (window.location.pathname.includes('confirm.html')) {
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
 
-//        // Cek apakah URL berisi parameter 'id' dengan nama
-//        if (name && name.trim() !== '') {
-//            sessionStorage.setItem('guestName', name);
-//         }
-//         else {
-//             alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
-//             window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah ke path sesuai kebutuhan
-//         }
+        // Cek apakah URL berisi parameter 'id' dengan nama
+        if (name && name.trim() !== '') {
+            sessionStorage.setItem('guestName', name);
+         }
+         else {
+             alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
+             window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah ke path sesuai kebutuhan
+         }
 
-//        const confirmButton = document.getElementById('confirm-button');
-//        if (confirmButton) {
-//            confirmButton.addEventListener('click', () => {
-//                window.location.href = '/Pernikahan_rivan-dalilah/index.html';
-//            });
-//        }
-//    }
+        const confirmButton = document.getElementById('confirm-button');
+        if (confirmButton) {
+            confirmButton.addEventListener('click', () => {
+                window.location.href = '/Pernikahan_rivan-dalilah/index.html';
+            });
+        }
+    }
 
     // Logika untuk halaman index
-//    if (window.location.pathname.includes('/')) {
-//        const guestName = sessionStorage.getItem('guestName');
+    if (window.location.pathname.includes('/')) {
+        const guestName = sessionStorage.getItem('guestName');
 
-//        // Decode URI jika data diambil dari parameter URL
-//        const decodedName = guestName ? decodeURIComponent(guestName) : '';
+        // Decode URI jika data diambil dari parameter URL
+        const decodedName = guestName ? decodeURIComponent(guestName) : '';
 
         // Jika sessionStorage kosong atau tidak ada guestName, alihkan kembali ke confirm.html
-//        if (!decodedName) {
-//            window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah sesuai path
-//        } else {
-//            const nameDisplay = document.createElement('h2');
-//            nameDisplay.textContent = `Selamat datang, ${decodedName}!`;
-//            document.body.prepend(nameDisplay);
-//        }
-//
-//    }
-//});
+        if (!decodedName) {
+            window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah sesuai path
+        } else {
+            const nameDisplay = document.createElement('h2');
+            nameDisplay.textContent = `Selamat datang, ${decodedName}!`;
+            document.body.prepend(nameDisplay);
+        }
+
+    }
+});
 
 
 
