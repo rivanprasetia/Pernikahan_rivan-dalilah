@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = params.get('id');
 
         // Cek apakah URL berisi parameter 'id' dengan nama
-    if (!name) {
-        window.location.href = '/Pernikahan_rivan-dalilah/confirm.html';  // Mengarahkan ke halaman konfirmasi jika 'id' tidak ada
-   }
+       if (!name) {
+           window.location.href = '/Pernikahan_rivan-dalilah/confirm.html';  // Mengarahkan ke halaman konfirmasi jika 'id' tidak ada
+       }
     
          
 
