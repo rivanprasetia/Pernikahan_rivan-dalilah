@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = params.get('name');
 
         // Cek apakah URL berisi parameter 'id' dengan nama
-        if (name && name.trim() !== '') {
-            sessionStorage.setItem('guestName', name);
-        }
+        //if (name && name.trim() !== '') {
+        //    sessionStorage.setItem('guestName', name);
+        //}
         // else {
         //     alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
         //     window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah ke path sesuai kebutuhan
