@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konfirmasi Akses Undangan</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div id="confirmation">
-        <h2>Selamat Datang!</h2>
-        <p>Untuk melanjutkan ke halaman undangan pernikahan, silakan konfirmasi.</p>
-        <button id="confirm-button">Lanjutkan</button>
-    </div>
 
+<body>
+    <div id="cover-photos">
+        <div id="photoName">
+            <img src="https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/Rivan%20dan%20dalilah.png"
+                alt="photo-kita">
+
+        </div>
+        <div id="confirmation">
+            <h2>Selamat Datang!</h2>
+            <p>Untuk melanjutkan ke halaman undangan pernikahan, silakan konfirmasi.</p>
+            <button id="confirm-button">Lanjutkan</button>
+        </div>
+    </div>
     <script>
-        document.getElementById('confirm-button').addEventListener('click', function() {
+        document.getElementById('confirm-button').addEventListener('click', function () {
             // Arahkan ke halaman index
             window.location.href = 'index.html';
         });
     </script>
 </body>
+
 </html>
