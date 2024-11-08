@@ -22,6 +22,23 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        // Ambil parameter dari URL
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('id');
+
+        // Cek apakah parameter 'id' ada
+        if (name) {
+            // Simpan data di sessionStorage
+            sessionStorage.setItem('guestName', name);
+        } else {
+            // Jika parameter 'id' tidak ada, alihkan ke halaman lain atau tampilkan pesan
+            alert('Anda harus menggunakan URL dengan parameter id untuk mengakses halaman ini.');
+            window.location.href = '/Undangan_Pernikahan/index.html'; // Ganti ke halaman atau path yang sesuai
+        }
+    });
+    </script>
 
 </body>
 
