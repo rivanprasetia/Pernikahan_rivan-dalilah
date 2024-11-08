@@ -38,6 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
             nameDisplay.textContent = `Selamat datang, ${decodedName}!`;
             document.body.prepend(nameDisplay);
         }
+
+        // Tutup Session
+window.addEventListener('unload', () => {
+    sessionStorage.removeItem('guestName');
+});
     }
 });
 
@@ -75,7 +80,4 @@ const countdownInterval = setInterval(updateCountdown, 1000);
 
 
 
-// Tutup Session
-window.addEventListener('unload', () => {
-    sessionStorage.removeItem('guestName');
-});
+
