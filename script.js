@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Cek apakah URL berisi parameter 'id' dengan nama
        if (!name) {
-           alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
+           alert('URL tidak valid. Harap akses halaman dengan link yang sudah di sediakan');
        
        }
     
