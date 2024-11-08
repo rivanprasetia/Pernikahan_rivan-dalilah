@@ -9,6 +9,7 @@
 body {
 
     font-family: 'Bad Script', cursive;
+    background-image: url(https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/Beranda.png);
     background-color: #f9f5f0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,4 +177,22 @@ footer {
 h1, h2{
     font-family: 'Bad Script', cursive;
 
+}
+
+.photo-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photo-card {
+    text-align: center;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
 }
