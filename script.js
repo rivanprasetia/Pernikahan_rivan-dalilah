@@ -8,9 +8,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const name = params.get('id');
 
         // Cek apakah URL berisi parameter 'id' dengan nama
+
+       const confirmButton = document.getElementById('confirm-button');
        if (!name) {
            alert('URL tidak valid. Harap akses halaman dengan link yang sudah di sediakan');
-       
+        if (confirmButton) {
+                    confirmButton.disabled = true;
+                    confirmButton.title = "Tombol ini tidak dapat diakses tanpa ID.";
+                }
+            } else {
+                // Aktifkan tombol dengan fungsi klik jika parameter 'id' ada
+                if (confirmButton) {
+                    confirmButton.addEventListener('click', () => {
+                        window.location.href = '/Pernikahan_rivan-dalilah/index.html';
+                    });
+                }
+
        }
     
          
