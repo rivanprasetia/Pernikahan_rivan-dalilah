@@ -1,6 +1,6 @@
 
 // Set nama tamu
-document.addEventListener('DOMContentLoaded', () => {
+//document.addEventListener('DOMContentLoaded', () => {
 
     // Logika untuk halaman konfirmasi
     if (window.location.pathname.includes('confirm.html')) {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
-});
+//});
 
 
 
