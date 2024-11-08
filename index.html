@@ -25,22 +25,39 @@
             </div>
         </div>
     </section>
-
+    <section id="story">
+        <div>
+            <p>وَاَنْكِحُوا الْاَيَامٰى مِنْكُمْ وَالصّٰلِحِيْنَ مِنْ عِبَادِكُمْ وَاِمَاۤىِٕكُمْۗ اِنْ يَّكُوْنُوْا
+                فُقَرَاۤءَ يُغْنِهِمُ اللّٰهُ مِنْ فَضْلِهٖۗ وَاللّٰهُ وَاسِعٌ عَلِيْمٌ</p>
+            <p>
+                "Dan kawinkanlah orang-orang yang masih membujang di antara kamu, dan juga orang-orang yang layak
+                (menikah)
+                dari
+                hamba-hamba sahayamu yang laki-laki dan perempuan. Jika mereka miskin, Allah akan memberikan kemampuan
+                kepada
+                mereka dengan karunia-Nya. Dan Allah Maha Luas (pemberian-Nya), Maha Mengetahui."
+            </p>
+            <p>
+                QS. An-Nur: 32
+            </p>
+        </div>
+    </section>
     <!-- Cerita Cinta -->
-<section id="story">
-    <h2>Cerita Cinta Kami</h2>
-    <p>Bagian ini berisi cerita tentang perjalanan cinta Anda.</p>
-    <div class="photo-section">
-        <div class="photo-card">
-            <img src="path/to/your-photo.jpg" alt="Foto Anda" class="photo">
-            <p><strong>RIVAN PRASETIA bin IWAN SETIAWAN</strong></p>
+    <section id="story">
+
+        <h2>Cerita Cinta Kami</h2>
+        <p>Bagian ini berisi cerita tentang perjalanan cinta Anda.</p>
+        <div class="photo-section">
+            <div class="photo-card">
+                <img src="path/to/your-photo.jpg" alt="Foto Anda" class="photo">
+                <p><strong>RIVAN PRASETIA bin IWAN SETIAWAN</strong></p>
+            </div>
+            <div class="photo-card">
+                <img src="path/to/partner-photo.jpg" alt="Foto Pasangan Anda" class="photo">
+                <p><strong>DALILAH binti AHMAD FIRDAUS</strong></p>
+            </div>
         </div>
-        <div class="photo-card">
-            <img src="path/to/partner-photo.jpg" alt="Foto Pasangan Anda" class="photo">
-            <p><strong>DALILAH binti AHMAD FIRDAUS</strong></p>
-        </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Informasi Acara -->
@@ -66,7 +83,13 @@
         </form>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        // Tutup Session
+        window.addEventListener('unload', () => {
+            sessionStorage.removeItem('guestName');
+        });
+    </script>
+
 
 </body>
 
