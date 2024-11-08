@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Cek apakah URL berisi parameter 'id' dengan nama
        if (!name) {
-           window.location.href = '/Pernikahan_rivan-dalilah/confirm.html';  // Mengarahkan ke halaman konfirmasi jika 'id' tidak ada
+           alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
+       
        }
     
          
