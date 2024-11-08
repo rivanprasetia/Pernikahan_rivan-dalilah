@@ -11,10 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (name && name.trim() !== '') {
             sessionStorage.setItem('guestName', name);
          }
-         else {
-             alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
-             window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah ke path sesuai kebutuhan
-         }
+//         else {
+//             alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
+//             window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah ke path sesuai kebutuhan
+//         }
 
         const confirmButton = document.getElementById('confirm-button');
         if (confirmButton) {
