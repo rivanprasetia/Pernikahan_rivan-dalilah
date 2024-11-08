@@ -4,20 +4,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Logika untuk halaman konfirmasi
     if (window.location.pathname.includes('confirm.html')) {
         const params = new URLSearchParams(window.location.search);
-        const name = params.get('id');
+        const name = params.get('name');
         
         // Cek apakah URL berisi parameter 'id' dengan nama
         if (name && name.trim() !== '') {
             sessionStorage.setItem('guestName', name);
-        } else {
-            alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
-            window.location.href = '/Undangan_Pernikahan/confirm.html'; // Ubah ke path sesuai kebutuhan
-        }
+        } 
+        // else {
+        //     alert('URL tidak valid. Harap akses halaman dengan format confirm.html?id=namaid.');
+        //     window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah ke path sesuai kebutuhan
+        // }
 
         const confirmButton = document.getElementById('confirm-button');
         if (confirmButton) {
             confirmButton.addEventListener('click', () => {
-                window.location.href = 'index.html';
+                window.location.href = '/Pernikahan_rivan-dalilah/';
             });
         }
     }
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Jika sessionStorage kosong atau tidak ada guestName, alihkan kembali ke confirm.html
         if (!decodedName) {
-            window.location.href = '/Undangan_Pernikahan/confirm.html'; // Ubah sesuai path
+            window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah sesuai path
         } else {
             const nameDisplay = document.createElement('h2');
             nameDisplay.textContent = `Selamat datang, ${decodedName}!`;
