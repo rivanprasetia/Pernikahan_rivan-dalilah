@@ -24,10 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // // Logika untuk halaman index
-    // if (window.location.pathname.includes('index.html')) {
-        
-    // }
+    // Logika untuk halaman index
+    if (window.location.pathname.includes('/Pernikahan_rivan-dalilah/')) {
+        const guestName = sessionStorage.getItem('guestName');
+
+        // Decode URI jika data diambil dari parameter URL
+        const decodedName = guestName ? decodeURIComponent(guestName) : '';
+
+        // Jika sessionStorage kosong atau tidak ada guestName, alihkan kembali ke confirm.html
+        if (!decodedName) {
+            window.location.href = '/Pernikahan_rivan-dalilah/confirm.html'; // Ubah sesuai path
+        } else {
+            const nameDisplay = document.createElement('h2');
+            nameDisplay.textContent = `Selamat datang, ${decodedName}!`;
+            document.body.prepend(nameDisplay);
+        }
+
+    }
 });
 
 
