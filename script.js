@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Logika untuk halaman index
-    if (window.location.pathname.includes('/')) {
+    if (window.location.pathname.includes('/Penikahan_rivan-dalilah/')) {
         const guestName = sessionStorage.getItem('guestName');
 
         // Decode URI jika data diambil dari parameter URL
