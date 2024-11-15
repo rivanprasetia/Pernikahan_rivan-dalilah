@@ -84,7 +84,7 @@ function updateCountdown() {
 // Perbarui hitungan setiap detik
 const countdownInterval = setInterval(updateCountdown, 1000);
 
-window.addEventListener('beforeunload', () => {
+window.addEventListener('unload', () => {
     sessionStorage.removeItem('guestName');
 });
 
