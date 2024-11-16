@@ -241,27 +241,25 @@ h2 {
 }
 
 #button-action {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: auto; /* Center the element within its container */
+    border: 3px solid #ffc7f9; /* Defines a consistent 3px border */
     border-radius: 5px;
-    border: 3px solid #ffc7f9;
     font-weight: bold;
     background-color: rgba(255, 232, 254, 0.8);
     padding: 10px 20px;
     font-size: 16px;
     width: fit-content;
     cursor: pointer;
+
 }
 
-.material-symbols-outlined {
-    margin-right: 8px; /* Optional spacing between icon and text */
-}
 
 #button-action:hover {
-    background-color: rgba(255, 181, 245, 0.9); /* Optional hover effect */
+    background-color: rgba(255, 181, 245); /* Optional hover effect */
 }
 
 
