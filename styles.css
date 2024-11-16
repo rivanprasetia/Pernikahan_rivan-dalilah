@@ -21,7 +21,9 @@ body {
     /* background-color: #f9f5f0; */
 }
 #arab-text{
-    font-size: 29;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
 
 /* Style Halaman/ Utama */
