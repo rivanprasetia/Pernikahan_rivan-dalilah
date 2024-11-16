@@ -182,6 +182,7 @@ h1, h2{
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+    font-family: 'Alex Brush', Sans-serif;
 }
 
 .photo-card {
