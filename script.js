@@ -31,5 +31,15 @@ window.addEventListener('unload', () => {
     sessionStorage.removeItem('guestName');
 });
 
+//Tomobol
 
+document.getElementById('button-action-akad').addEventListener('click', () => {
+    // Open a new window or tab to display the map
+    window.open('https://maps.app.goo.gl/woqU2AcdwabgpnTf8', '_blank');
+});
+
+document.getElementById('button-action-resepsi').addEventListener('click', () => {
+    // Open a new window or tab to display the map
+    window.open('https://maps.app.goo.gl/hz2wGfYGBQZXVaGc9', '_blank');
+});
 

@@ -78,14 +78,14 @@ section {
 #story h2,
 #event-info h2,
 #rsvp h2 {
-
+    text-decoration-color: #5a2d76;
     font-size: 1.8em;
-    color: #5a2d76;
+    /* color: #5a2d76; */
     text-align: center;
     margin-bottom: 20px;
     position: fixed;
-    
-   
+
+
 }
 
 #story p {
@@ -240,8 +240,11 @@ h2 {
 }
 
 #button-action {
-    position: center;
-    /* color:rgba(255, 181, 245, 0.931); */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto; /* Center the element within its container */
     border-radius: 5px;
     border: 3px solid #ffc7f9;
     font-weight: bold;
@@ -251,6 +254,15 @@ h2 {
     width: fit-content;
     cursor: pointer;
 }
+
+.material-symbols-outlined {
+    margin-right: 8px; /* Optional spacing between icon and text */
+}
+
+#button-action:hover {
+    background-color: rgba(255, 181, 245, 0.9); /* Optional hover effect */
+}
+
 
 
 #photoName img {
