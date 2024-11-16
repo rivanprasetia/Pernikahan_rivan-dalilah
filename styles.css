@@ -196,7 +196,9 @@ h1, h2{
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-start-start-radius: initial;
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
 }
 #cover-photos {
     display: flex;
