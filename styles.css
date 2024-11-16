@@ -72,18 +72,20 @@ section {
     /* background-color: #ffffff; */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 
 /* Cerita Cinta Kami */
 #story h2,
 #event-info h2,
 #rsvp h2 {
-    text-decoration-color: #5a2d76;
+    
     font-size: 1.8em;
-    /* color: #5a2d76; */
+    color: #5a2d76;
     text-align: center;
     margin-bottom: 20px;
-    position: fixed;
+    
+    display: contents;
 
 
 }
