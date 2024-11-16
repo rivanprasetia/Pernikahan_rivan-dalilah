@@ -73,8 +73,8 @@ section {
 }
 
 /* Cerita Cinta Kami */
-#story h2,
-#event-info h2,
+#story h2 p,
+#event-info h2 p .button-action icon-map,
 #rsvp h2 {
     
     font-size: 1.8em;
