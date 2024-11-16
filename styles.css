@@ -79,13 +79,11 @@ section {
 #story h2,
 #event-info h2,
 #rsvp h2 {
-    
     font-size: 1.8em;
     color: #5a2d76;
     text-align: center;
     margin-bottom: 20px;
-    
-    display: contents;
+    display: flex;
 
 
 }
