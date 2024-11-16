@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Pernikahan</title>
-    <link rel="stylesheet" href="/dist/sakura.min.css">
+    <!-- <link rel="stylesheet" href="/dist/sakura.min.css"> -->
+    <link rel="stylesheet" href="dist/sakura.css" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond:ital&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=EB+Garamond:ital&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +30,8 @@
     <section id="story">
         <div id="arab-text">
             <p>
-                وَاَنْكِحُوا الْاَيَامٰى مِنْكُمْ وَالصّٰلِحِيْنَ مِنْ عِبَادِكُمْ وَاِمَاۤىِٕكُمْۗ اِنْ يَّكُوْنُوْا فُقَرَاۤءَ يُغْنِهِمُ اللّٰهُ مِنْ فَضْلِهٖۗ وَاللّٰهُ وَاسِعٌ عَلِيْمٌ
+                وَاَنْكِحُوا الْاَيَامٰى مِنْكُمْ وَالصّٰلِحِيْنَ مِنْ عِبَادِكُمْ وَاِمَاۤىِٕكُمْۗ اِنْ يَّكُوْنُوْا
+                فُقَرَاۤءَ يُغْنِهِمُ اللّٰهُ مِنْ فَضْلِهٖۗ وَاللّٰهُ وَاسِعٌ عَلِيْمٌ
             </p>
         </div>
 
@@ -75,7 +78,13 @@
         <h2>Informasi Acara</h2>
         <p>Akad Nikah: 07 Desember 2024, 09:00 WIB</p>
         <p>Resepsi: 07 Desember 2024, 11:00 WIB</p>
-        <p>Lokasi: [Alamat atau Link Google Maps]</p>
+        <p>Lokasi: </p>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5569978376947!2d107.02725596948866!3d-6.2336481664338885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698e94fcdc227b%3A0x61861c239cf9ce56!2sJl.%20Pahlawan%20No.4%2C%20RT.003%2FRW.007%2C%20Duren%20Jaya%2C%20Kec.%20Bekasi%20Tim.%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017111!5e0!3m2!1sid!2sid!4v1731734310085!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </section>
 
     <!-- RSVP -->
@@ -98,26 +107,26 @@
     </script>
     <script>
         var sakura = new Sakura('body', {
-          colors: [
-            {
-              gradientColorStart: 'rgba(255, 183, 197, 0.9)',
-              gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
-              gradientColorDegree: 120,
-            },
-            {
-              gradientColorStart: 'rgba(255,189,189)',
-              gradientColorEnd: 'rgba(227,170,181)',
-              gradientColorDegree: 120,
-            },
-            {
-              gradientColorStart: 'rgba(212,152,163)',
-              gradientColorEnd: 'rgba(242,185,196)',
-              gradientColorDegree: 120,
-            },
-          ],
-          delay: 200,
+            colors: [
+                {
+                    gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+                    gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+                    gradientColorDegree: 120,
+                },
+                {
+                    gradientColorStart: 'rgba(255,189,189)',
+                    gradientColorEnd: 'rgba(227,170,181)',
+                    gradientColorDegree: 120,
+                },
+                {
+                    gradientColorStart: 'rgba(212,152,163)',
+                    gradientColorEnd: 'rgba(242,185,196)',
+                    gradientColorDegree: 120,
+                },
+            ],
+            delay: 200,
         });
-      </script>
+    </script>
 
 
 </body>
