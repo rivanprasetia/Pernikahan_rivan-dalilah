@@ -228,6 +228,16 @@ h1, h2{
     font-size: 16px;
     cursor: pointer;
 }
+#button-action {
+    border-radius: 25%;
+    border-width: 5;
+    font-weight: bold;
+    border-bottom: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 
 #photoName img {
     max-width: 100%;
