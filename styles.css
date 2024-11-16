@@ -85,7 +85,7 @@ section {
     margin-bottom: 20px;
     display: flex;
     justify-content: center; /* Horizontally centers content */
-    align-items: center; /* Vertically centers content */
+    /* align-items: center;  */
 
 }
 
