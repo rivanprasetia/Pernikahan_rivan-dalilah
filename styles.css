@@ -230,9 +230,10 @@ h1, h2{
 }
 #button-action {
     border-radius: 25%;
-    border-width: 5;
+    border-width: 5px;
     font-weight: bold;
-    border-bottom: #333;
+    border-color: #5a2d76;
+    ;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
