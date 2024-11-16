@@ -66,7 +66,7 @@ body {
 
 /* Section Styling */
 section {
-    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8));
     margin: 40px 0;
     padding: 20px;
     /* background-color: #ffffff; */
@@ -75,14 +75,16 @@ section {
 }
 
 /* Cerita Cinta Kami */
-#story h2 p,
-#event-info h2 p,
+#story h2,
+#event-info h2,
 #rsvp h2 {
 
     font-size: 1.8em;
     color: #5a2d76;
     text-align: center;
     margin-bottom: 20px;
+    position: fixed;
+    
    
 }
 
@@ -241,7 +243,7 @@ h2 {
     position: center;
     /* color:rgba(255, 181, 245, 0.931); */
     border-radius: 5px;
-    border: 3px solid #5a2d76;
+    border: 3px solid #ffc7f9;
     font-weight: bold;
     background-color: rgba(255, 232, 254, 0.8);
     padding: 10px 20px;
