@@ -81,6 +81,9 @@ section {
     color: #5a2d76;
     text-align: center;
     margin-bottom: 20px;
+    margin: 0 auto 20px; /* Atur margin atas-bawah dan tengah */
+    display: block; /* Pastikan elemen ditampilkan sebagai blok */
+    width: max-content; /* Opsional: Menghindari lebar penuh */
 }
 
 #story p {
