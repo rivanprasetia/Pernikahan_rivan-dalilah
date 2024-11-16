@@ -20,7 +20,7 @@ body {
 
     /* background-color: #f9f5f0; */
 }
-arab-text{
+#arab-text{
     font-size: 29;
 }
 
@@ -185,7 +185,7 @@ h1, h2{
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
-    font-family: 'Alex Brush', Sans-serif;
+    /* font-family: 'Alex Brush', Sans-serif; */
 }
 
 .photo-card {
@@ -196,9 +196,7 @@ h1, h2{
     width: 150px;
     height: 150px;
     object-fit: cover;
-    /* border-radius: 50%; */
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
+    border-radius: 50%;
 }
 #cover-photos {
     display: flex;
