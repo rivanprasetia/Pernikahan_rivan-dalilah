@@ -76,8 +76,8 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: max-content fit-content; /* Sesuaikan ukuran dengan konten */
-    margin: 40px auto; /* Agar elemen terpusat */
+    /* width: max-content fit-content;  */
+    /* margin: 40px auto;  */
 }
 
 /* Judul Section */
