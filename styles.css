@@ -20,8 +20,6 @@ body {
     background-image: url(https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/assets/img/Beranda.png);
     /* background-repeat: no-repeat; */
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
@@ -78,8 +76,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: max-content; /* Sesuaikan ukuran dengan konten */
-    max-width: 90%; /* Batasi lebar maksimal agar tetap responsif */
+    width: max-content fit-content; /* Sesuaikan ukuran dengan konten */
     margin: 40px auto; /* Agar elemen terpusat */
 }
 
