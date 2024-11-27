@@ -18,7 +18,7 @@
 /* Body Style */
 body {
     background-image: url(https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/assets/img/Beranda.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -75,12 +75,12 @@ body {
 /* Section Styling */
 section {
     background: var(--light-bg-color);
-    margin: 40px 0;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: max-content;
-    
+    width: max-content; /* Sesuaikan ukuran dengan konten */
+    max-width: 90%; /* Batasi lebar maksimal agar tetap responsif */
+    margin: 40px auto; /* Agar elemen terpusat */
 }
 
 /* Judul Section */
