@@ -22,39 +22,39 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    display: flex; /* Changed from 'none' for visibility */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    display: none;
+    /* Hidden by default */
     justify-content: center;
     align-items: center;
+
+    background-image: url(assets/img/Beranda.png);
     z-index: 1000;
 }
 
 /* Dialog Box */
-.dialog-box {
-    background-image: url('assets/img/Beranda.png');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 12px;
+/* .dialog-box {
+
+    padding: 30px;
+    border-radius: 8px;
     text-align: center;
-    width: 90%; /* Full width for smaller screens */
-    max-width: 600px; /* Limit maximum width */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    color: white; /* Ensures text is readable over background image */
-}
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
 
 /* Title */
 .dialog-box h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: white;
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
 }
 
 /* Message */
 .dialog-box p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    color: white;
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 20px;
 }
 
 /* Button */
@@ -72,24 +72,6 @@
 #close-dialog:hover {
     background-color: var(--secondary-color);
 }
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .dialog-box {
-        width: 100%; /* Full width on small screens */
-        height: auto; /* Adjust height automatically */
-        border-radius: 8px;
-    }
-
-    .dialog-box h2 {
-        font-size: 1.5em;
-    }
-
-    .dialog-box p {
-        font-size: 1em;
-    }
-}
-
 
 
 
