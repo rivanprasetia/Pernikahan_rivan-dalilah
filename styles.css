@@ -93,7 +93,9 @@ section {
 /* Judul Section */
 #story h2,
 #event-info h2,
-#rsvp h2 {
+#wedding-wish h2,
+#map-locations h2
+ {
     font-size: 1.8em;
     color: var(--primary-color);
     text-align: center;
@@ -119,43 +121,7 @@ section {
     margin: 10px 0;
 }
 
-/* RSVP Form */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-form label {
-    font-size: 1em;
-    color: var(--primary-color);
-}
-
-form input,
-form select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: var(--secondary-color);
-}
 
 /* Footer */
 footer {
@@ -202,6 +168,105 @@ footer {
     margin-bottom: 20px;
     display: block;
 }
+
+/* Wedding Wishes Section */
+#wedding-wish {
+    background: var(--light-bg-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
+    margin-top: 30px;
+    text-align: center;
+}
+
+#wedding-wish h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#wishes-container {
+    margin-top: 30px;
+}
+
+#wishes-container h3 {
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#wishes-list {
+    list-style: none;
+    padding: 0;
+}
+
+#wishes-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* RSVP Form */
+#wish-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
+}
+
+#wish-form label {
+    font-size: 1.1em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    display: block;
+}
+
+#wish-form input,
+#wish-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+#wish-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+
+
+
+
+/* -------------------------------- */
+
+
+
 
 /* Konfirmasi */
 #confirmation {
