@@ -33,10 +33,10 @@
     z-index: 1000;
 }
 
-.dialog-picture {
+.picture-cover {
     background-image: url(assets/img/prewed1.png);
     display: inline-block block;
-    width: max-content;
+    width: min-content;
     max-width:150px ;
 }
 
