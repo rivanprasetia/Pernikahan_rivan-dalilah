@@ -1,48 +1,40 @@
-/* Global Reset */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variabel Warna */
+/* Root Variables */
 :root {
     --primary-color: #5a2d76;
     --secondary-color: #d34b5f;
     --text-color: #333;
-    --light-bg-color: rgba(255, 255, 255, 0.4);
-    --hover-bg-color: rgba(255, 181, 245);
-    --button-bg-color: rgba(255, 232, 254, 0.8);
+    --bg-color-light: rgba(255, 255, 255, 0.4);
 }
 
-/* Body Style */
+/* Global Styles */
 body {
-    background-image: url(https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/assets/img/Beranda.png);
-    /* background-repeat: no-repeat; */
+    font-family: 'EB Garamond', serif;
+    background: url('https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/assets/img/Beranda.png') no-repeat center center fixed;
     background-size: cover;
+    min-height: 100vh;
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
 }
 
-/* Teks Arab */
-#arab-text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-/* Halaman Utama */
+/* Home Section */
 #home {
     text-align: center;
-    padding: 60px 20px;
     color: var(--primary-color);
+    padding: 50px 20px;
 }
 
 #home h1 {
     font-size: 3em;
-    margin-bottom: 10px;
     font-family: 'Bad Script', cursive;
+    margin-bottom: 10px;
 }
 
 #home h2 {
@@ -51,12 +43,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Timer */
-#countdown p {
-    font-size: 1.2em;
-    color: #666;
-}
-
+/* Countdown */
 #timer {
     display: flex;
     justify-content: center;
@@ -66,63 +53,56 @@ body {
 
 #timer div {
     font-size: 1.5em;
-    color: var(--primary-color);
     text-align: center;
 }
 
-/* Section Styling */
-section {
-    background: var(--light-bg-color);
+/* Story Section */
+#story {
+    background: var(--bg-color-light);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* width: max-content fit-content;  */
-    margin: 30px auto; 
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
 }
 
-/* Judul Section */
-#story h2,
-#event-info h2,
-#rsvp h2 {
-    font-size: 1.8em;
-    color: var(--primary-color);
-    text-align: center;
-    margin-bottom: 20px;
+.photo-section {
     display: flex;
+    gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
-#story p {
-    color: #555;
-    font-size: 1em;
+.photo-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Event Info */
+#event-info {
+    background: var(--bg-color-light);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.8;
+    margin: 30px auto;
 }
 
-/* Informasi Acara */
-#event-info p {
-    color: var(--text-color);
-    font-size: 1em;
+/* RSVP Section */
+#rsvp {
+    background: var(--bg-color-light);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    margin: 10px 0;
+    margin: 30px auto;
 }
 
-/* RSVP Form */
 form {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
 }
 
-form label {
-    font-size: 1em;
-    color: var(--primary-color);
-}
-
-form input,
-form select {
+form input, form select, form button {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -131,122 +111,23 @@ form select {
     font-size: 1em;
 }
 
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: #fff;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: var(--secondary-color);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
+form button {
     background-color: var(--primary-color);
     color: white;
-}
-
-/* Photo Section */
-.photo-section {
-    display: flex;
-    gap: 20px;
-    width: min-content auto;
-    justify-content: center;
-    margin-top: 20px;
-    font-family: 'EB Garamond', serif;
-}
-
-.photo-card {
-    text-align: center;
-}
-
-.photo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/* Cover Photos */
-#cover-photos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-}
-
-#photoName img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    display: block;
-}
-
-/* Konfirmasi */
-#confirmation {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#button-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    border: 3px solid var(--hover-bg-color);
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: var(--button-bg-color);
-    padding: 10px 20px;
-    font-size: 16px;
-    width: fit-content;
+    border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.material-symbols-outlined {
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#button-action:hover {
-    background-color: var(--hover-bg-color);
-}
-
-/* Map Container */
-.map-container {
-    width: 90%;
-    max-width: 600px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
-}
-
-iframe {
-    width: 100%;
-    height: 400px;
-    border: 0;
+form button:hover {
+    background-color: var(--secondary-color);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
     #home h1 {
         font-size: 2.5em;
     }
@@ -255,24 +136,9 @@ iframe {
         font-size: 1.5em;
     }
 
-    #timer div {
-        font-size: 1.2em;
-    }
-
-    section {
-        padding: 15px;
-    }
-
-    #story p,
-    #event-info p {
-        font-size: 0.9em;
-    }
-
-    form label {
-        font-size: 0.9em;
-    }
-
-    button {
-        font-size: 1em;
+    .photo-card img {
+        width: 80px;
+        height: 80px;
     }
 }
+
