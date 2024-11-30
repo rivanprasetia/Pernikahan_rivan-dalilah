@@ -191,14 +191,10 @@ footer {
     font-family: 'EB Garamond', serif;
 }
 
-img {
-    pointer-events: none; /* Mencegah drag */
-    user-select: none; /* Mencegah seleksi */
-    display: block;
-}
 
 .photo-card {
     text-align: center;
+    display: block;
 }
 
 .photo {
@@ -206,6 +202,9 @@ img {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
+    pointer-events: none; /* Mencegah drag */
+    user-select: none; /* Mencegah seleksi */
+    display: block;
 }
 
 /* Cover Photos */
