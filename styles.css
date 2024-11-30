@@ -300,11 +300,10 @@ iframe {
 /* Kontrol Suara */
 #sound-control {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     z-index: 1000;
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.4); /* Menambah latar belakang agar lebih terlihat */
     border-radius: 50%;
     padding: 10px;
 }
