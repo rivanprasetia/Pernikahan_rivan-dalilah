@@ -120,8 +120,30 @@ soundIcon.addEventListener('click', toggleMusic);
 
 window.addEventListener('load', () => {
     hiddenPlayBtn.click();
-    
-    
+
+
+});
+
+const dialogContainer = document.getElementById('welcome-dialog');
+const closeDialogButton = document.getElementById('close-dialog');
+const userNameSpan = document.getElementById('user-name');
+
+// Ambil parameter dari URL (contoh: ?to=nama)
+const urlParams = new URLSearchParams(window.location.search);
+const userName = urlParams.get('to') || 'Tamu Istimewa';
+
+// Tampilkan nama pengguna
+userNameSpan.textContent = decodeURIComponent(userName);
+
+// Tampilkan dialog saat pertama kali dimuat
+window.onload = () => {
+    dialogContainer.style.display = 'flex'; // Tampilkan dialog
+};
+
+// Fungsi untuk menutup dialog
+closeDialogButton.addEventListener('click', () => {
+    dialogContainer.style.display = 'none'; // Sembunyikan dialog
+    backgroundMusic.play();
 });
 
 
@@ -145,26 +167,4 @@ document.addEventListener("fullscreenchange", () => {
     }
 });
 
-
-const dialogContainer = document.getElementById('welcome-dialog');
-const closeDialogButton = document.getElementById('close-dialog');
-const userNameSpan = document.getElementById('user-name');
-
-// Ambil parameter dari URL (contoh: ?to=nama)
-const urlParams = new URLSearchParams(window.location.search);
-const userName = urlParams.get('to') || 'Tamu Istimewa';
-
-// Tampilkan nama pengguna
-userNameSpan.textContent = decodeURIComponent(userName);
-
-// Tampilkan dialog saat pertama kali dimuat
-window.onload = () => {
-    dialogContainer.style.display = 'flex'; // Tampilkan dialog
-};
-
-// Fungsi untuk menutup dialog
-closeDialogButton.addEventListener('click', () => {
-    dialogContainer.style.display = 'none'; // Sembunyikan dialog
-    backgroundMusic.play();
-});
 
