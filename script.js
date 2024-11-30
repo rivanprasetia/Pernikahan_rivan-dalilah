@@ -107,7 +107,7 @@ let isPlaying = false;
 function toggleMusic() {
     if (isPlaying) {
         backgroundMusic.pause();
-        soundIcon.src = 'assets/icon/bnt_stop.png'; // Ganti dengan ikon 'sound off'
+        soundIcon.src = 'assets/icon/btn_stop.png'; // Ganti dengan ikon 'sound off'
     } else {
         backgroundMusic.play();
         soundIcon.src = 'assets/icon/btn_play.png'; // Ganti dengan ikon 'sound on'
