@@ -124,13 +124,6 @@ window.addEventListener('load', () => {
     
 });
 
-// Autoplay music on load
-window.addEventListener('load', () => {
-    
-    backgroundMusic.play();
-    isPlaying = true;
-    
-});
 
 document.addEventListener('contextmenu', (event) => {
     if (event.target.tagName === 'IMG') {
