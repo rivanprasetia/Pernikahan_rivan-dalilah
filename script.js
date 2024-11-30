@@ -112,7 +112,7 @@ function toggleMusic() {
         backgroundMusic.play();
         soundIcon.src = 'assets/icon/play_circle.png'; // Ganti dengan ikon 'sound on'
     }
-    isPlaying = true;
+    isPlaying = !isPlaying;
 }
 
 // Event listener for sound control
