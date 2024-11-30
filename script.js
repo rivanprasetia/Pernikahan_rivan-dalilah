@@ -110,7 +110,7 @@ function toggleMusic() {
         soundIcon.src = 'assets/icon/stop_circle.png'; // Ganti dengan ikon 'sound off'
     } else {
         backgroundMusic.play();
-        soundIcon.src = 'assets/icon/play_circle.png'; // Ganti dengan ikon 'sound on'
+        soundIcon.src = 'assets/icon/'; // Ganti dengan ikon 'sound on'
     }
     isPlaying = !isPlaying;
 }
