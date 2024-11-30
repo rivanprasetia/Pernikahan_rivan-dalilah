@@ -118,14 +118,9 @@ function toggleMusic() {
 // Event listener for sound control
 soundIcon.addEventListener('click', toggleMusic);
 
-// Autoplay musik dengan tombol tersembunyi
-window.addEventListener('load', () => {
-    // Klik tombol tersembunyi untuk memulai musik
-    hiddenPlayBtn.click();
-});
-
 // Autoplay music on load
 window.addEventListener('load', () => {
+    hiddenPlayBtn.click();
     backgroundMusic.play();
     isPlaying = true;
     soundIcon.src = 'assets/icon/play_circle.png';
