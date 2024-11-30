@@ -1,30 +1,23 @@
-// Menampilkan dialog saat halaman pertama kali dimuat
-window.onload = function() {
-    const dialog = document.getElementById('welcome-dialog');
-    dialog.style.display = 'flex'; // Tampilkan dialog saat halaman dimuat
-}
+const dialogContainer = document.getElementById('welcome-dialog');
+const closeDialogButton = document.getElementById('close-dialog');
+const userNameSpan = document.getElementById('user-name');
 
-// Menutup dialog saat tombol "Tutup" diklik
-document.getElementById('close-dialog').addEventListener('click', function() {
-    const dialog = document.getElementById('welcome-dialog');
-    dialog.style.display = ''; // Sembunyikan dialog
+// Ambil parameter dari URL (contoh: ?to=nama)
+const urlParams = new URLSearchParams(window.location.search);
+const userName = urlParams.get('to') || 'Tamu Istimewa';
+
+// Tampilkan nama pengguna
+userNameSpan.textContent = decodeURIComponent(userName);
+
+// Tampilkan dialog saat pertama kali dimuat
+window.onload = () => {
+    dialogContainer.style.display = 'flex'; // Tampilkan dialog
+};
+
+// Fungsi untuk menutup dialog
+closeDialogButton.addEventListener('click', () => {
+    dialogContainer.style.display = 'none'; // Sembunyikan dialog
 });
-
-// Function to get URL parameters
-function getURLParameter(name) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(name); // Return the value of the specified parameter
-}
-
-// Ambil nilai parameter 'to' dari URL
-const nameFromURL = getURLParameter('to');
-
-// Jika parameter 'to' ada, tampilkan nama pada elemen dengan ID 'user-name'
-if (nameFromURL) {
-    document.getElementById('user-name').textContent = nameFromURL;
-} else {
-    document.getElementById('user-name').textContent = 'Tamu yang terhormat'; // Default jika tidak ada parameter
-}
 
 
 
@@ -157,7 +150,7 @@ window.addEventListener('load', () => {
 // Autoplay music on load
 window.addEventListener('load', () => {
     
-    backgroundMusic.play();
+    backgroundMusic.onplaying();
     isPlaying = true;
     
 });
