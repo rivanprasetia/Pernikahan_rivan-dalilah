@@ -10,6 +10,23 @@ document.getElementById('close-dialog').addEventListener('click', function() {
     dialog.style.display = ''; // Sembunyikan dialog
 });
 
+// Function to get URL parameters
+function getURLParameter(name) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(name); // Return the value of the specified parameter
+}
+
+// Ambil nilai parameter 'to' dari URL
+const nameFromURL = getURLParameter('to');
+
+// Jika parameter 'to' ada, tampilkan nama pada elemen dengan ID 'user-name'
+if (nameFromURL) {
+    document.getElementById('user-name').textContent = nameFromURL;
+} else {
+    document.getElementById('user-name').textContent = 'Tamu yang terhormat'; // Default jika tidak ada parameter
+}
+
+
 
 // Set tanggal pernikahan
 const weddingDate = new Date("December 7, 2024 09:00:00").getTime();
