@@ -1,3 +1,16 @@
+// Menampilkan dialog saat halaman pertama kali dimuat
+window.onload = function() {
+    const dialog = document.getElementById('welcome-dialog');
+    dialog.style.display = 'flex'; // Tampilkan dialog saat halaman dimuat
+}
+
+// Menutup dialog saat tombol "Tutup" diklik
+document.getElementById('close-dialog').addEventListener('click', function() {
+    const dialog = document.getElementById('welcome-dialog');
+    dialog.style.display = ''; // Sembunyikan dialog
+});
+
+
 // Set tanggal pernikahan
 const weddingDate = new Date("December 7, 2024 09:00:00").getTime();
 
