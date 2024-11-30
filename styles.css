@@ -33,12 +33,13 @@
     z-index: 1000;
 }
 
-.picture-cover {
-    src: url(assets/img/prewed1.png);
-    display: inline-block block;
-    width: max-content;
-    border: 50%;
-    margin: 30px;
+.cover-dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
 
 }
 
