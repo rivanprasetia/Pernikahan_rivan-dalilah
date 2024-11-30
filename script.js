@@ -160,11 +160,6 @@ document.addEventListener('keydown', (event) => {
         event.preventDefault();
     }
 });
-document.addEventListener("fullscreenchange", () => {
-    if (document.fullscreenElement) {
-        document.exitFullscreen();
-        alert("Mode layar penuh dinonaktifkan untuk keamanan.");
-    }
-});
+
 
 
