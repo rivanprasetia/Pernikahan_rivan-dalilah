@@ -154,3 +154,13 @@ window.addEventListener('load', () => {
     isPlaying = true;
     
 });
+
+document.addEventListener('keydown', (event) => {
+    if (event.ctrlKey && (event.key === 'c' || event.key === 'u' || event.key === 'i')) {
+        event.preventDefault();
+        alert('Maaf, aksi ini tidak diizinkan!');
+    }
+});
+document.addEventListener('dragstart', (event) => event.preventDefault());
+
+
