@@ -120,7 +120,7 @@ soundIcon.addEventListener('click', toggleMusic);
 
 // Autoplay music on load
 window.addEventListener('load', () => {
-    backgroundMusic.play();
+    backgroundMusic.onplay();
     isPlaying = true;
     soundIcon.src = 'assets/icon/play_circle.png';
 });
