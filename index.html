@@ -4,43 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Wish</title>
+    <title>Undangan Pernikahan</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
     <!-- Halaman Utama -->
     <section id="home">
-        <h1>Wedding Wish</h1>
+        <h1>Undangan Pernikahan</h1>
         <h2>Rivan Prasetia & Dalilah</h2>
-        <audio controls autoplay loop id="background-music">
-            <source src="your-music-file.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div id="countdown">
+            <p>Waktu Menuju Hari Bahagia</p>
+            <div id="timer">
+                <div><span id="days"></span><span> Hari</span></div>
+                <div><span id="hours"></span><span> Jam</span></div>
+                <div><span id="minutes"></span><span> Menit</span></div>
+                <div><span id="seconds"></span><span> Detik</span></div>
+            </div>
+        </div>
     </section>
 
-    <!-- Wedding Wish Form -->
-    <section id="wedding-wish">
-        <h2>Beri Ucapan Anda</h2>
-        <form id="wish-form">
+    <!-- Cerita Cinta -->
+    <section id="story">
+        <h2>Cerita Cinta Kami</h2>
+        <div class="photo-section">
+            <div class="photo-card">
+                <img src="path/to/photo1.jpg" alt="Foto Anda" class="photo">
+                <p><strong>Rivan Prasetia, S.Kom</strong></p>
+            </div>
+            <div class="photo-card">
+                <img src="path/to/photo2.jpg" alt="Foto Pasangan Anda" class="photo">
+                <p><strong>Dalilah</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informasi Acara -->
+    <section id="event-info">
+        <h2>Akad Nikah</h2>
+        <p>07 Desember 2024</p>
+        <p>09:00 WIB - Selesai</p>
+        <p>Masjid Jami Al-Ikhwan</p>
+        <button class="button-action">
+            <span class="material-icons">location_on</span>
+            <span>Lihat Lokasi</span>
+        </button>
+    </section>
+
+    <!-- RSVP -->
+    <section id="rsvp">
+        <h2>Konfirmasi Kehadiran</h2>
+        <form>
             <label for="name">Nama:</label>
             <input type="text" id="name" placeholder="Masukkan Nama Anda" required>
-            <label for="message">Ucapan:</label>
-            <textarea id="message" placeholder="Tulis Ucapan Anda" required></textarea>
-            <button type="submit">Kirim Ucapan</button>
+            <label for="attending">Apakah Anda Akan Hadir?</label>
+            <select id="attending">
+                <option value="yes">Ya</option>
+                <option value="no">Tidak</option>
+            </select>
+            <button type="submit">Kirim</button>
         </form>
-
-        <!-- Wedding Wishes Display -->
-        <div id="wishes-container">
-            <h3>Ucapan dari Tamu</h3>
-            <ul id="wishes-list">
-                <!-- Wishes will be displayed here -->
-            </ul>
-        </div>
     </section>
 
     <script src="script.js"></script>
