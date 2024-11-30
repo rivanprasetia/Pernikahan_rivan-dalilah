@@ -18,7 +18,7 @@
 /* Body Style */
 @media (max-width: 768px) {
     body {
-        background-size: contain;
+        background-size: cover;
         padding: 10px;
         background-image: url(https://raw.githubusercontent.com/rivanprasetia/Undangan-Pernikahan/refs/heads/main/assets/img/Beranda.png);
         background-position: center;
