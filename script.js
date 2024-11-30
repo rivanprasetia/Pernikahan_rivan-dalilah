@@ -150,7 +150,7 @@ window.addEventListener('load', () => {
 // Autoplay music on load
 window.addEventListener('load', () => {
     
-    backgroundMusic.onplaying();
+    backgroundMusic.play();
     isPlaying = true;
     
 });
