@@ -34,10 +34,12 @@
 }
 
 .picture-cover {
-    background-image: url(assets/img/prewed1.png);
+    src: url(assets/img/prewed1.png);
     display: inline-block block;
-    width: min-content;
-    max-width:150px ;
+    width: max-content;
+    border: 50%;
+    margin: 30px;
+
 }
 
 /* Title */
