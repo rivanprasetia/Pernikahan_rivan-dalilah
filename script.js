@@ -43,3 +43,55 @@ document.getElementById('button-action-resepsi').addEventListener('click', () =>
     window.open('https://maps.app.goo.gl/hz2wGfYGBQZXVaGc9', '_blank');
 });
 
+
+// Elements
+const wishForm = document.getElementById('wish-form');
+const wishesList = document.getElementById('wishes-list');
+
+// Load existing wishes from JSON
+async function loadWishes() {
+    try {
+        const response = await fetch('wishes.json');
+        const data = await response.json();
+        data.forEach(wish => addWishToDOM(wish.name, wish.message));
+    } catch (error) {
+        console.error("Error loading wishes:", error);
+    }
+}
+
+// Save new wish to JSON file (simulated with localStorage for this example)
+async function saveWish(wish) {
+    let existingWishes = JSON.parse(localStorage.getItem('wishes')) || [];
+    existingWishes.push(wish);
+    localStorage.setItem('wishes', JSON.stringify(existingWishes));
+}
+
+// Add wish to the DOM
+function addWishToDOM(name, message) {
+    const li = document.createElement('li');
+    li.innerHTML = `<strong>${name}</strong>: ${message}`;
+    wishesList.appendChild(li);
+}
+
+// Handle form submission
+wishForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !message) {
+        alert("Nama dan ucapan tidak boleh kosong!");
+        return;
+    }
+
+    const newWish = { name, message };
+    addWishToDOM(name, message);
+    await saveWish(newWish);
+
+    // Clear the form
+    wishForm.reset();
+});
+
+// Initialize the app
+loadWishes();

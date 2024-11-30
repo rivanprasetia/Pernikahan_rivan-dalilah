@@ -142,3 +142,57 @@ form button:hover {
     }
 }
 
+/* Wedding Wish Section */
+#wedding-wish {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#wedding-wish form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#wedding-wish form input,
+#wedding-wish form textarea,
+#wedding-wish form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#wedding-wish form button {
+    background-color: #5a2d76;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#wedding-wish form button:hover {
+    background-color: #d34b5f;
+}
+
+#wishes-container {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#wishes-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#wishes-container li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(240, 240, 240, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
