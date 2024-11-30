@@ -282,3 +282,21 @@ iframe {
         font-size: 1em;
     }
 }
+
+#sound-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#sound-control img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+#sound-control img:hover {
+    transform: scale(1.1);
+}

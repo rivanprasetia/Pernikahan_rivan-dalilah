@@ -95,3 +95,31 @@ wishForm.addEventListener('submit', async (event) => {
 
 // Initialize the app
 loadWishes();
+
+
+// Sound Control
+const soundIcon = document.getElementById('sound-icon');
+const backgroundMusic = document.getElementById('background-music');
+
+let isPlaying = false;
+
+// Function to toggle music
+function toggleMusic() {
+    if (isPlaying) {
+        backgroundMusic.pause();
+        soundIcon.src = 'sound-off.png'; // Ganti dengan ikon 'sound off'
+    } else {
+        backgroundMusic.play();
+        soundIcon.src = 'sound-on.png'; // Ganti dengan ikon 'sound on'
+    }
+    isPlaying = !isPlaying;
+}
+
+// Event listener for sound control
+soundIcon.addEventListener('click', toggleMusic);
+
+// Autoplay music on load
+window.addEventListener('load', () => {
+    backgroundMusic.play();
+    isPlaying = true;
+});
