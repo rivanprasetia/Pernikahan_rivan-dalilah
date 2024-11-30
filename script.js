@@ -118,10 +118,16 @@ function toggleMusic() {
 // Event listener for sound control
 soundIcon.addEventListener('click', toggleMusic);
 
-// Autoplay music on load
 window.addEventListener('load', () => {
     hiddenPlayBtn.click();
+    
+    
+});
+
+// Autoplay music on load
+window.addEventListener('load', () => {
+    
     backgroundMusic.play();
     isPlaying = true;
-    soundIcon.src = 'assets/icon/play_circle.png';
+    
 });
