@@ -107,10 +107,10 @@ let isPlaying = false;
 function toggleMusic() {
     if (isPlaying) {
         backgroundMusic.pause();
-        soundIcon.src = 'sound-off.png'; // Ganti dengan ikon 'sound off'
+        soundIcon.src = 'assets/icon/stop_circle.png'; // Ganti dengan ikon 'sound off'
     } else {
         backgroundMusic.play();
-        soundIcon.src = 'sound-on.png'; // Ganti dengan ikon 'sound on'
+        soundIcon.src = 'assets/icon/play_circle.png'; // Ganti dengan ikon 'sound on'
     }
     isPlaying = !isPlaying;
 }
