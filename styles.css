@@ -10,7 +10,7 @@
     --primary-color: #5a2d76;
     --secondary-color: #d34b5f;
     --text-color: #333;
-    --light-bg-color: rgba(255, 255, 255, 0.4);
+    --light-bg-color: rgba(255, 255, 255, 0.6);
     --hover-bg-color: rgba(255, 181, 245);
     --button-bg-color: rgba(255, 232, 254, 0.8);
 }
@@ -81,7 +81,7 @@ section {
     background: var(--light-bg-color);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
     /* width: max-content fit-content;  */
     margin: 30px auto;
 }
