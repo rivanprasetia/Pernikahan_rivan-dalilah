@@ -131,6 +131,18 @@ document.addEventListener('contextmenu', (event) => {
         alert('Gambar ini dilindungi.');
     }
 });
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") {
+        alert("Screenshot tidak diperbolehkan.");
+    }
+});
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+        alert('Developer tools dinonaktifkan.');
+        event.preventDefault();
+    }
+});
+
 
 const dialogContainer = document.getElementById('welcome-dialog');
 const closeDialogButton = document.getElementById('close-dialog');
