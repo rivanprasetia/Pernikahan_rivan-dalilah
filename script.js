@@ -122,4 +122,5 @@ soundIcon.addEventListener('click', toggleMusic);
 window.addEventListener('load', () => {
     backgroundMusic.play();
     isPlaying = true;
+    soundIcon.src = 'assets/icon/play_circle.png';
 });
