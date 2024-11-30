@@ -28,18 +28,18 @@
     /* Hidden by default */
     justify-content: center;
     align-items: center;
-
     background-image: url(assets/img/Beranda.png);
     z-index: 1000;
 }
 
 /* Kotak dialog */
 .dialog-box {
-    background-color: white;
-    padding: 20px 30px;
-    border-radius: 10px;
+    background: var(--light-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
+    margin: 30px auto;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
 }
@@ -426,7 +426,7 @@ button:hover {
 .map-container {
     width: 100%;
     /* Menggunakan 100% agar lebar peta mengikuti lebar container */
-    max-width: 600px;
+    max-width: 300px;
     border: 2px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
