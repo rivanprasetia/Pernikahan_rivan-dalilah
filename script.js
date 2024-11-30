@@ -1,26 +1,3 @@
-const dialogContainer = document.getElementById('welcome-dialog');
-const closeDialogButton = document.getElementById('close-dialog');
-const userNameSpan = document.getElementById('user-name');
-
-// Ambil parameter dari URL (contoh: ?to=nama)
-const urlParams = new URLSearchParams(window.location.search);
-const userName = urlParams.get('to') || 'Tamu Istimewa';
-
-// Tampilkan nama pengguna
-userNameSpan.textContent = decodeURIComponent(userName);
-
-// Tampilkan dialog saat pertama kali dimuat
-window.onload = () => {
-    dialogContainer.style.display = 'flex'; // Tampilkan dialog
-};
-
-// Fungsi untuk menutup dialog
-closeDialogButton.addEventListener('click', () => {
-    dialogContainer.style.display = 'none'; // Sembunyikan dialog
-});
-
-
-
 // Set tanggal pernikahan
 const weddingDate = new Date("December 7, 2024 09:00:00").getTime();
 
@@ -162,4 +139,25 @@ document.addEventListener('contextmenu', (event) => {
     }
 });
 
+const dialogContainer = document.getElementById('welcome-dialog');
+const closeDialogButton = document.getElementById('close-dialog');
+const userNameSpan = document.getElementById('user-name');
+
+// Ambil parameter dari URL (contoh: ?to=nama)
+const urlParams = new URLSearchParams(window.location.search);
+const userName = urlParams.get('to') || 'Tamu Istimewa';
+
+// Tampilkan nama pengguna
+userNameSpan.textContent = decodeURIComponent(userName);
+
+// Tampilkan dialog saat pertama kali dimuat
+window.onload = () => {
+    dialogContainer.style.display = 'flex'; // Tampilkan dialog
+};
+
+// Fungsi untuk menutup dialog
+closeDialogButton.addEventListener('click', () => {
+    dialogContainer.style.display = 'none'; // Sembunyikan dialog
+    backgroundMusic.play();
+});
 

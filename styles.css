@@ -33,6 +33,13 @@
     z-index: 1000;
 }
 
+.dialog-picture {
+    background-image: url(assets/img/prewed1.png);
+    display: inline-block block;
+    width: max-content;
+    max-width:150px ;
+}
+
 /* Title */
 .dialog-box h2 {
     font-size: 1.8em;
@@ -202,8 +209,10 @@ footer {
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
-    pointer-events: none; /* Mencegah drag */
-    user-select: none; /* Mencegah seleksi */
+    pointer-events: none;
+    /* Mencegah drag */
+    user-select: none;
+    /* Mencegah seleksi */
     display: block;
 }
 
