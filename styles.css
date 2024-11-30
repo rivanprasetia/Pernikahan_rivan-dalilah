@@ -17,14 +17,20 @@
 
 /* Dialog Container */
 .dialog-container {
-    background-size: cover;
-    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background */
+    display: none;
+    /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+
     background-image: url(assets/img/Beranda.png);
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--text-color);
-    line-height: 1.6;
-    padding: 20px;
+    z-index: 1000;
 }
 
 /* Title */
@@ -183,6 +189,12 @@ footer {
     justify-content: center;
     margin-top: 20px;
     font-family: 'EB Garamond', serif;
+}
+
+img {
+    pointer-events: none; /* Mencegah drag */
+    user-select: none; /* Mencegah seleksi */
+    display: block;
 }
 
 .photo-card {

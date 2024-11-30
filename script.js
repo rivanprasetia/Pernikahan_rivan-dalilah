@@ -155,12 +155,11 @@ window.addEventListener('load', () => {
     
 });
 
-document.addEventListener('keydown', (event) => {
-    if (event.ctrlKey && (event.key === 'c' || event.key === 'u' || event.key === 'i')) {
+document.addEventListener('contextmenu', (event) => {
+    if (event.target.tagName === 'IMG') {
         event.preventDefault();
-        alert('Maaf, aksi ini tidak diizinkan!');
+        alert('Gambar ini dilindungi.');
     }
 });
-document.addEventListener('dragstart', (event) => event.preventDefault());
 
 

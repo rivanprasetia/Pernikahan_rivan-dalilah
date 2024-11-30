@@ -20,14 +20,15 @@
 </head>
 
 <body>
-<!-- Dialog Ucapan Selamat Datang -->
-<div id="welcome-dialog" class="dialog-container">
-    <div class="dialog-box">
-        <h2>Selamat Datang, <span id="user-name"></span>!</h2>
-        <p>Terima kasih telah datang untuk merayakan momen bahagia bersama kami. Semoga hari Anda penuh kebahagiaan dan kenangan indah.</p>
-        <button id="close-dialog">Buka</button>
+    <!-- Dialog Ucapan Selamat Datang -->
+    <div id="welcome-dialog" class="dialog-container">
+        <div class="dialog-box">
+            <h2>Selamat Datang, <span id="user-name"></span>!</h2>
+            <p>Terima kasih telah datang untuk merayakan momen bahagia bersama kami. Semoga hari Anda penuh kebahagiaan
+                dan kenangan indah.</p>
+            <button id="close-dialog">Buka</button>
+        </div>
     </div>
-</div>
 
 
     <!-- Halaman Utama -->
@@ -77,14 +78,20 @@
 
         <h2>Cerita Cinta Kami</h2>
         <p>Bagian ini berisi cerita tentang perjalanan cinta Anda.</p>
-        <div class="photo-section">
-            <div class="photo-card">
-                <img src="assets/img/rivan.png" alt="Foto Anda" class="photo">
+        <div class="photo-section" style="position: relative; display: inline-block;">
+            <div class="photo-card" style="position: relative; display: inline-block;">
+                <img src="assets/img/rivan.png" alt="Foto Anda" class="photo" style="display: block;">
+                <div
+                    style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.01);">
+                </div>
                 <p><strong>Rivan Prasetia, S.Kom</strong>
 
             </div>
-            <div class="photo-card">
-                <img src="assets/img/dalilah.png" alt="Foto Pasangan Anda" class="photo">
+            <div class="photo-card" style="position: relative; display: inline-block;>
+                <img src=" assets/img/dalilah.png" alt="Foto Pasangan Anda" class="photo style=" display: block;">
+                <div
+                    style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.01);">
+                </div>
                 <p><strong>Dalilah</strong></p>
 
             </div>
@@ -121,9 +128,8 @@
     <section id="map-locations">
         <h2>Lokasi</h2>
         <div class="map-container">
-            <iframe
-                src="https://maps.app.goo.gl/hz2wGfYGBQZXVaGc9"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe src="https://maps.app.goo.gl/hz2wGfYGBQZXVaGc9" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
     </section>
@@ -149,7 +155,7 @@
     </section>
 
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>
