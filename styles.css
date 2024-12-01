@@ -223,11 +223,18 @@ section {
     display: flex;
     justify-content: center;
 }
-
+#story h3 {
+    color: #5a2d76;
+    font-size: 1em;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
 #story p {
     color: #555;
     font-size: 1em;
-    text-align: center;
+    text-align: left;
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.8;
@@ -351,15 +358,6 @@ footer {
     font-family: 'Bad Script', cursive;
     color: var(--primary-color);
 }
-
-
-
-
-
-
-
-
-
 
 /* Bank Digital Section */
 #bank-digital {
@@ -595,8 +593,6 @@ iframe {
     section {
         padding: 15px;
     }
-
-    #story p,
     #event-info p {
         font-size: 0.9em;
     }
