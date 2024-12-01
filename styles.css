@@ -328,10 +328,9 @@ footer {
 }
 
 .bank-container img {
-    width: 30;
-    max-height: 80px;
-    object-fit: contain;
-    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .bank-container p {
@@ -346,6 +345,13 @@ footer {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
+.img-logo-kartu {
+    width: 30;
+    max-height: 80px;
+    object-fit: contain;
+
+    padding: 5px;
+}
 
 
 
@@ -556,8 +562,8 @@ iframe {
 }
 
 #sound-control img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s ease;
     border-radius: 50%;
 }
