@@ -60,7 +60,6 @@ function toggleMusic() {
         backgroundMusic.pause();
         soundIcon.src = 'assets/icon/btn_stop.png'; // Ganti dengan ikon 'sound off'
     }
-    isPlaying = !isPlaying;
 }
 
 // Event listener for sound control
