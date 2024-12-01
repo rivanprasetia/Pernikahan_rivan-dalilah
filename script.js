@@ -67,7 +67,7 @@ soundIcon.addEventListener('click', toggleMusic);
 
 const dialogContainer = document.getElementById('welcome-dialog');
 const closeDialogButton = document.getElementById('close-dialog');
-const sectionDialog = document.getElementById('cover-ivitation');
+const sectionDialog = document.getElementsByClassName('dialog-box');
 const userNameSpan = document.getElementById('user-name');
 
 // Ambil parameter dari URL (contoh: ?to=nama)
