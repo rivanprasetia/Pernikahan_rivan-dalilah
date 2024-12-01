@@ -156,70 +156,60 @@
     </section>
     <!-- </div> -->
     <script src="script.js"></script>
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
+    <script>
+        // URL Realtime Database
+        const databaseURL = "https://invitation-ee6ac-default-rtdb.asia-southeast1.firebasedatabase.app/";
 
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyBSDNIQMcPi1m8I5axIza3mArptUGRHtxc",
-            authDomain: "invitation-ee6ac.firebaseapp.com",
-            databaseURL: "https://invitation-ee6ac-default-rtdb.asia-southeast1.firebasedatabase.app",
-            projectId: "invitation-ee6ac",
-            storageBucket: "invitation-ee6ac.firebasestorage.app",
-            messagingSenderId: "28111310215",
-            appId: "1:28111310215:web:04a8f09e74f7ba95395722"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-
-        // Form submission
-        const form = document.getElementById("wish-form");
-        form.addEventListener("submit", async (e) => {
+        // Tambahkan ucapan ke database
+        document.getElementById("wish-form").addEventListener("submit", async (e) => {
             e.preventDefault();
             const name = document.getElementById("name").value;
             const message = document.getElementById("message").value;
 
+            const data = {
+                name: name,
+                message: message,
+                timestamp: new Date().toISOString()
+            };
+
             try {
-                // Add a new document to Firestore
-                await addDoc(collection(db, "wedding-wishes"), {
-                    name: name,
-                    message: message,
-                    timestamp: new Date(),
+                await fetch(`${databaseURL}/wedding-wishes.json`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
                 });
                 alert("Ucapan berhasil dikirim!");
-                form.reset(); // Reset form after submission
+                document.getElementById("wish-form").reset();
+                loadWishes(); // Refresh tampilan
             } catch (error) {
-                console.error("Error adding document: ", error);
+                console.error("Gagal mengirim ucapan:", error);
             }
         });
 
-        // Display wishes
-        const wishesList = document.getElementById("wishes-list");
-        const wishesCollection = collection(db, "wedding-wishes");
+        // Memuat dan menampilkan ucapan
+        async function loadWishes() {
+            try {
+                const response = await fetch(`${databaseURL}/wedding-wishes.json`);
+                const data = await response.json();
+                const wishesList = document.getElementById("wishes-list");
+                wishesList.innerHTML = ""; // Bersihkan daftar sebelumnya
 
-        onSnapshot(wishesCollection, (snapshot) => {
-            wishesList.innerHTML = ""; // Clear current list
-            snapshot.docs.forEach((doc) => {
-                const wish = doc.data();
-                const listItem = document.createElement("li");
-                listItem.textContent = `${wish.name}: ${wish.message}`;
-                wishesList.appendChild(listItem);
-            });
-        });
+                if (data) {
+                    Object.values(data).forEach((wish) => {
+                        const listItem = document.createElement("li");
+                        listItem.textContent = `${wish.name}: ${wish.message}`;
+                        wishesList.appendChild(listItem);
+                    });
+                }
+            } catch (error) {
+                console.error("Gagal memuat ucapan:", error);
+            }
+        }
+
+        // Panggil fungsi loadWishes saat halaman dimuat
+        loadWishes();
     </script>
-
-
-
-
-    </script>
-
 </body>
 
 </html>
