@@ -290,6 +290,35 @@ footer {
     display: block;
 }
 
+/* bank digital */
+
+.bank-container {
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Gaya gambar */
+.bank-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Hover efek */
+.bank-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
 /* Wedding Wishes Section */
 #wedding-wish {
     background: var(--light-bg-color);
