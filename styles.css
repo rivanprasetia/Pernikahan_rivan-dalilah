@@ -25,12 +25,13 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     /* Semi-transparent background */
-    display:none;
+    display:block;
     /* Hidden by default */
     justify-content: center;
     align-items: center;
     background-image: url(assets/img/Beranda.png);
     z-index: 1000;
+    overflow-y: auto;
 }
 
 /* Kotak dialog */
