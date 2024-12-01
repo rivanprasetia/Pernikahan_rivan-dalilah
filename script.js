@@ -60,6 +60,7 @@ function toggleMusic() {
         backgroundMusic.pause();
         soundIcon.src = 'assets/icon/btn_stop.png'; // Ganti dengan ikon 'sound off'
     }
+    isPlaying=!isPlaying;
 }
 
 // Event listener for sound control
@@ -83,7 +84,7 @@ window.onload = () => {
 
 // Fungsi untuk menutup dialog
 closeDialogButton.addEventListener('click', () => {
-    dialogContainer.style.display = 'block'; // Sembunyikan dialog
+    dialogContainer.style.display = 'contents'; // Sembunyikan dialog
     backgroundMusic.play();
 });
 
