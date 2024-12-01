@@ -363,7 +363,8 @@ footer {
 
 /* Bank Digital Section */
 #bank-digital {
-    align-content: center;
+    align-items: center;
+    justify-content: center;
     /* justify-content: space-between; */
     padding: 20px;
     background: var(--light-bg-color);
