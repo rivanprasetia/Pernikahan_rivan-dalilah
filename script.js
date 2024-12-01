@@ -66,12 +66,6 @@ function toggleMusic() {
 // Event listener for sound control
 soundIcon.addEventListener('click', toggleMusic);
 
-window.addEventListener('load', () => {
-    hiddenPlayBtn.click();
-
-
-});
-
 const dialogContainer = document.getElementById('welcome-dialog');
 const closeDialogButton = document.getElementById('close-dialog');
 const userNameSpan = document.getElementById('user-name');
