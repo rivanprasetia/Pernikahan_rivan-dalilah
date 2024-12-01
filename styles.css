@@ -303,13 +303,16 @@ footer {
     background: var(--light-bg-color);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
-    margin-top: 30px;
+
 }
 
 #bank-digital h2 {
     font-size: 1.8em;
     color: var(--primary-color);
     margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 #bank-digital h3 {
