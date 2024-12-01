@@ -46,21 +46,15 @@
 }
 
 /* Gambar di dialog */
-#dialog-picture {
+#dialog-box img{
+    border-top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-}
-
-#picture-cover {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 .cover-dialog {
     width: 100%;
     height: 100%;
