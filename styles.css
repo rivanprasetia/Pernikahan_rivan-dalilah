@@ -297,7 +297,7 @@ footer {
 
 /* Bank Digital Section */
 #bank-digital {
-    text-align: center;
+    /* text-align: left; */
     padding: 20px;
     background: var(--light-bg-color);
     border-radius: 8px;
@@ -345,6 +345,7 @@ footer {
     font-weight: bold;
     bottom: 0px;
     left: 0px;
+    position: relative;
 }
 
 .bank-container:hover {
