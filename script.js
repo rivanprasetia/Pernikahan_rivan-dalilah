@@ -49,16 +49,16 @@ document.getElementById('button-action-resepsi').addEventListener('click', () =>
 const soundIcon = document.getElementById('sound-icon');
 const backgroundMusic = document.getElementById('background-music');
 
-let isPlaying = false;
+let isPlaying = true;
 
 // Function to toggle music
 function toggleMusic() {
     if (isPlaying) {
-        backgroundMusic.pause();
-        soundIcon.src = 'assets/icon/btn_stop.png'; // Ganti dengan ikon 'sound off'
-    } else {
         backgroundMusic.play();
         soundIcon.src = 'assets/icon/btn_play.png'; // Ganti dengan ikon 'sound on'
+    } else {
+        backgroundMusic.pause();
+        soundIcon.src = 'assets/icon/btn_stop.png'; // Ganti dengan ikon 'sound off'
     }
     isPlaying = !isPlaying;
 }
