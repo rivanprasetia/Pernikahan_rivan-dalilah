@@ -208,7 +208,8 @@ section {
 #story h2,
 #event-info h2,
 #wedding-wish h2,
-#map-locations h2 {
+#map-locations h2,
+#bank-digital {
     font-size: 1.8em;
     color: var(--primary-color);
     text-align: center;
