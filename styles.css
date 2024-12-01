@@ -267,7 +267,9 @@ footer {
     margin-top: 20px;
     font-family: 'EB Garamond', serif;
 }
-
+#txt-perkenalan{
+    justify-content: space-around;
+}
 
 .photo-card {
     text-align: center;
@@ -278,7 +280,7 @@ footer {
     width: 100px;
     height: 100px;
     object-fit: cover;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     pointer-events: none;
     /* Mencegah drag */
     user-select: none;
