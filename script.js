@@ -84,11 +84,8 @@ window.onload = () => {
 
 // Fungsi untuk menutup dialog
 closeDialogButton.addEventListener('click', () => {
-    dialogContainer.style.display = 'block'; // Menampilkan dialog
-    // Menambahkan kelas atau gaya untuk membuat dialog bisa di-scroll
-    dialogContainer.style.maxHeight = '80vh'; // Menyediakan tinggi maksimal untuk dialog
-    dialogContainer.style.overflowY = 'auto'; // Memungkinkan scroll vertikal jika konten lebih tinggi dari maxHeight
-
+    dialogContainer.style.display = 'none';
+   
     backgroundMusic.play();
 });
 

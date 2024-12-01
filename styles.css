@@ -64,7 +64,14 @@
     
 }
 
-/* Judul dialog */
+
+.dialog-box h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-family: 'Bad Script', cursive;
+}
+
+
 .dialog-box h2 {
     font-size: 1.8em;
     color: var(--primary-color);
