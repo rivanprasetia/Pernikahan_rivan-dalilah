@@ -26,10 +26,11 @@
     /* background-color: rgba(0, 0, 0, 0.6); */
     /* Semi-transparent background */
     display: block;
+    
     /* Hidden by default */
     justify-content: center;
     align-items: center;
-    /* z-index: 1000; */
+    z-index: 1000;
     background-image: url(assets/img/Beranda.png);
     overflow-y: auto;
 }
