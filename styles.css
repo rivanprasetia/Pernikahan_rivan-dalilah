@@ -23,19 +23,18 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     /* Semi-transparent background */
-    display:flex;
+    display:block;
     /* Hidden by default */
     justify-content: center;
     align-items: center;
-    background-image: url(assets/img/Beranda.png);
-    z-index: 1000;
+    /* z-index: 1000; */
     overflow-y: auto;
 }
 
 /* Kotak dialog */
-.dialog-box {
+#dialog-box {
     background: var(--light-bg-color);
     padding: 20px;
     border-radius: 8px;
@@ -209,6 +208,7 @@ section {
 }
 
 /* Judul Section */
+#cover-invitation,
 #story h2,
 #event-info h2,
 #wedding-wish h2,
