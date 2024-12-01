@@ -274,8 +274,8 @@ footer {
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: auto;
     object-fit: cover;
     /* border-radius: 50%; */
     pointer-events: none;
