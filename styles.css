@@ -274,15 +274,16 @@ footer {
 }
 
 .photo {
-    width: 300px;
+    width: 250px;
     height: auto;
+    max-width: fit-content;
     object-fit: cover;
     /* border-radius: 50%; */
     pointer-events: none;
     /* Mencegah drag */
     user-select: none;
     /* Mencegah seleksi */
-    display: block;
+    display: flex;
 }
 
 /* Cover Photos */
