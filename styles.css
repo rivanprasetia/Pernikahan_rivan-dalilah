@@ -209,7 +209,7 @@ section {
 #event-info h2,
 #wedding-wish h2,
 #map-locations h2,
-#bank-digital {
+#bank-digital h2{
     font-size: 1.8em;
     color: var(--primary-color);
     text-align: center;
@@ -292,6 +292,12 @@ footer {
 
 /* bank digital */
 
+#bank-digital h3{
+    font-family: 'Bad Script', cursive;
+    color: var(--primary-color);
+    text-align: center;
+}
+
 .bank-container {
     display: inline-block;
     width: 150px;
@@ -312,11 +318,10 @@ footer {
 }
 
 .img-logo-kartu {
+    max-width: 100%;
+    height: auto;
     top: 0px;
     right: 0px;
-    width: 100px;
-    height: 100px;
-    max-width: fit-content;
     object-fit: cover;
     padding: 15px;
 }
@@ -350,7 +355,7 @@ footer {
 }
 
 #wishes-container h3 {
-    font-size: 1.6em;
+    font-size: 1.08em;
     color: var(--primary-color);
     margin-bottom: 15px;
 }
