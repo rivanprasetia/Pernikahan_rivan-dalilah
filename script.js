@@ -83,7 +83,7 @@ window.onload = () => {
 
 // Fungsi untuk menutup dialog
 closeDialogButton.addEventListener('click', () => {
-    dialogContainer.style.display = 'none'; // Sembunyikan dialog
+    dialogContainer.style.display = 'block'; // Sembunyikan dialog
     backgroundMusic.play();
 });
 
