@@ -114,15 +114,19 @@ document.addEventListener('keyup', function (e) {
         navigator.clipboard.writeText('Screenshot dinonaktifkan.');
     }
 });
+document.getElementById("copy-logo1").addEventListener("click", function() {
+    copyToClipboard("nomor1");
+});
 
- // Fungsi untuk menyalin teks
- function copyText(elementId) {
-    const text = document.getElementById(elementId).textContent;
-    navigator.clipboard.writeText(text)
-        .then(() => alert(`${text}berhasil disalin ke clipboard!`))
-        .catch(err => console.error('Gagal menyalin teks:', err));
+document.getElementById("copy-logo2").addEventListener("click", function() {
+    copyToClipboard("nomor2");
+});
+
+function copyToClipboard(elementId) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Nomor berhasil disalin: " + text);
+    }).catch(err => {
+        alert("Gagal menyalin teks: " + err);
+    });
 }
-
-// Tambahkan event listener untuk setiap logo
-document.getElementById('copy-logo1').onclick = () => copyText('nomor1');
-document.getElementById('copy-logo2').onclick = () => copyText('nomor2');
