@@ -68,6 +68,7 @@ soundIcon.addEventListener('click', toggleMusic);
 
 const dialogContainer = document.getElementById('welcome-dialog');
 const closeDialogButton = document.getElementById('close-dialog');
+const sectionDialog = document.getElementById('cover-ivitation');
 const userNameSpan = document.getElementById('user-name');
 
 // Ambil parameter dari URL (contoh: ?to=nama)
@@ -85,7 +86,7 @@ window.onload = () => {
 // Fungsi untuk menutup dialog
 closeDialogButton.addEventListener('click', () => {
     dialogContainer.style.display = 'none';
-   
+   sectionDialog.style.display= "flex"
     backgroundMusic.play();
 });
 
