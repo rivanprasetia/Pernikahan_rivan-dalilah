@@ -63,8 +63,9 @@
 .cover-dialog {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-top: 50%;
+    
 }
 
 /* Judul dialog */
