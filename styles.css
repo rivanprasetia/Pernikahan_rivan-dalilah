@@ -10,7 +10,7 @@
     --primary-color: #5a2d76;
     --secondary-color: #d34b5f;
     --text-color: #333;
-    --text-color-bank:#fff;
+    --text-color-bank: #fff;
     --light-bg-color: rgba(255, 255, 255, 0.6);
     --hover-bg-color: rgba(255, 181, 245);
     --button-bg-color: rgba(255, 232, 254, 0.8);
@@ -25,7 +25,7 @@
     height: 100%;
     /* background-color: rgba(0, 0, 0, 0.6); */
     /* Semi-transparent background */
-    display:block;
+    display: block;
     /* Hidden by default */
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
 }
 
 /* Gambar di dialog */
-#dialog-box img{
+#dialog-box img {
     border-top: 50%;
     display: flex;
     justify-content: center;
@@ -56,12 +56,13 @@
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 .cover-dialog {
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-top: 50%;
-    
+
 }
 
 
@@ -125,7 +126,7 @@
     #picture-cover {
         width: 120px;
         height: 120px;
-        border: 50% ;
+        border: 50%;
     }
 }
 
@@ -213,7 +214,7 @@ section {
 #story h2,
 #event-info h2,
 #wedding-wish h2,
-#map-locations h2{
+#map-locations h2 {
     font-size: 1.8em;
     color: var(--primary-color);
     text-align: center;
@@ -319,7 +320,7 @@ footer {
 }
 
 .bank-container {
-    align-items: flex-start; 
+    /* align-items: flex-start; */
     justify-content: space-between;
     display: inline-block;
     width: 300px;
@@ -337,7 +338,12 @@ footer {
     right: 10px;
     max-width: 100%;
     height: auto;
-    position: absolute;
+    width: 20;
+    max-height: 80px;
+    object-fit: contain;
+
+    padding: 5px;
+    /* position: absolute; */
 
 }
 
@@ -347,20 +353,12 @@ footer {
     font-weight: bold;
     bottom: 10px;
     left: 10px;
-    position: absolute;
+    /* position: absolute; */
 }
 
 .bank-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.img-logo-kartu {
-    width: 20;
-    max-height: 80px;
-    object-fit: contain;
-
-    padding: 5px;
 }
 
 
