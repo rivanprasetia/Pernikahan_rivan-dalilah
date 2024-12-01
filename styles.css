@@ -319,14 +319,9 @@ footer {
 }
 
 .bank-container {
-
-    position: relative; 
-    padding: 20px;
-    display: flex;
     align-items: flex-start; 
     justify-content: space-between;
-
-    /* display: inline-block; */
+    display: inline-block;
     width: 300px;
     height: 200px;
     margin: 10px 20px;
