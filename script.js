@@ -102,19 +102,27 @@ document.addEventListener('keydown', (event) => {
         event.preventDefault();
     }
 });
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     if (e.key === 'PrintScreen') {
         alert("Screenshot dinonaktifkan.");
         e.preventDefault();
     }
 });
 
-document.addEventListener('keyup', function(e) {
+document.addEventListener('keyup', function (e) {
     if (e.key === 'PrintScreen') {
         navigator.clipboard.writeText('Screenshot dinonaktifkan.');
     }
 });
 
+ // Fungsi untuk menyalin teks
+ function copyText(elementId) {
+    const text = document.getElementById(elementId).textContent;
+    navigator.clipboard.writeText(text)
+        .then(() => alert(`${text}berhasil disalin ke clipboard!`))
+        .catch(err => console.error('Gagal menyalin teks:', err));
+}
 
-
-
+// Tambahkan event listener untuk setiap logo
+document.getElementById('copy-logo1').onclick = () => copyText('nomor1');
+document.getElementById('copy-logo2').onclick = () => copyText('nomor2');

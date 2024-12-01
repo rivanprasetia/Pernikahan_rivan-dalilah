@@ -298,7 +298,7 @@ footer {
 
 /* Bank Digital Section */
 #bank-digital {
-    
+
     align-items: flex-start;
     justify-content: space-between;
     /* text-align: left; */
@@ -363,16 +363,13 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-.copy-logo{
-    padding-bottom: 10px;
-    padding-right: 10px;
-    max-width: 100%;
+
+.copy-logo {
+    src: url(assets/icon/copy.png);
     height: auto;
-    width: 20;
-    max-height: 80px;
+    width: 10px;
     object-fit: contain;
     padding: 5px;
-    position: absolute;
 }
 
 
