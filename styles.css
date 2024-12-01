@@ -25,7 +25,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     /* Semi-transparent background */
-    display: contents;
+    display:none;
     /* Hidden by default */
     justify-content: center;
     align-items: center;
@@ -117,6 +117,7 @@
     #picture-cover {
         width: 120px;
         height: 120px;
+        border: 50% ;
     }
 }
 
