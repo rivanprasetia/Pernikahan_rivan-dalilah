@@ -296,12 +296,73 @@ footer {
 }
 
 
+/* text */
+
+.bank-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#img-logo-kartu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.bank-container p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+#copy-logo1, #copy-logo2 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+#bank-digital h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Bad Script', cursive;
+    color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
 /* Bank Digital Section */
 #bank-digital {
 
-    align-items: flex-start;
-    justify-content: space-between;
-    /* text-align: left; */
+    /* justify-content: space-between; */
     padding: 20px;
     background: var(--light-bg-color);
     border-radius: 8px;
@@ -317,24 +378,9 @@ footer {
     justify-content: center;
     display: flex;
 }
-
-#bank-digital h3 {
-    font-family: 'Bad Script', cursive;
-    color: var(--primary-color);
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .bank-container {
     display: block;
-    width: 300px;
-    height: 200px;
-    margin: 10px 20px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 .img-logo-kartu {
@@ -363,15 +409,6 @@ footer {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
-
-.copy-logo {
-    src: url(assets/icon/copy.png);
-    height: auto;
-    width: 10px;
-    object-fit: contain;
-    padding: 5px;
-}
-
 
 
 /* Wedding Wishes Section */
