@@ -84,7 +84,7 @@ window.onload = () => {
 
 // Fungsi untuk menutup dialog
 closeDialogButton.addEventListener('click', () => {
-    dialogContainer.style.display = 'inline-flex'; // Sembunyikan dialog
+    dialogContainer.style.display = 'contents'; // Sembunyikan dialog
     backgroundMusic.play();
 });
 
