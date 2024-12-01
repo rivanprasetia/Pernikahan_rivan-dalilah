@@ -36,126 +36,189 @@
     <!-- <div
         style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.01); pointer-events: none; z-index: 9999;"> -->
 
-        <!-- Halaman Utama -->
-        <section id="home">
-            <h1>Undangan Pernikahan</h1>
-            <h2>Rivan Prasetia & Dalilah</h2>
-            <div id="sound-control">
-                <img src="assets/icon/btn_play.png" alt="Sound On" id="sound-icon">
-                <audio id="background-music" loop>
-                    <source src="assets/sound/play.ogg" type="audio/ogg">
-                </audio>
+    <!-- Halaman Utama -->
+    <section id="home">
+        <h1>Undangan Pernikahan</h1>
+        <h2>Rivan Prasetia & Dalilah</h2>
+        <div id="sound-control">
+            <img src="assets/icon/btn_play.png" alt="Sound On" id="sound-icon">
+            <audio id="background-music" loop>
+                <source src="assets/sound/play.ogg" type="audio/ogg">
+            </audio>
+        </div>
+        <div id="countdown">
+            <p>Waktu Menuju Hari Bahagia</p>
+            <div id="timer">
+                <div><span id="days"></span><span> Hari</span></div>
+                <div><span id="hours"></span><span> Jam</span></div>
+                <div><span id="minutes"></span><span> Menit</span></div>
+                <div><span id="seconds"></span><span> Detik</span></div>
             </div>
-            <div id="countdown">
-                <p>Waktu Menuju Hari Bahagia</p>
-                <div id="timer">
-                    <div><span id="days"></span><span> Hari</span></div>
-                    <div><span id="hours"></span><span> Jam</span></div>
-                    <div><span id="minutes"></span><span> Menit</span></div>
-                    <div><span id="seconds"></span><span> Detik</span></div>
-                </div>
+        </div>
+    </section>
+    <section id="story">
+        <div id="arab-text">
+            <p>
+                وَاَنْكِحُوا الْاَيَامٰى مِنْكُمْ وَالصّٰلِحِيْنَ مِنْ عِبَادِكُمْ وَاِمَاۤىِٕكُمْۗ اِنْ
+                يَّكُوْنُوْا
+                فُقَرَاۤءَ يُغْنِهِمُ اللّٰهُ مِنْ فَضْلِهٖۗ وَاللّٰهُ وَاسِعٌ عَلِيْمٌ
+            </p>
+        </div>
+
+        <div>
+            <p>
+                "Dan kawinkanlah orang-orang yang masih membujang di antara kamu, dan juga orang-orang yang layak
+                (menikah)
+                dari
+                hamba-hamba sahayamu yang laki-laki dan perempuan. Jika mereka miskin, Allah akan memberikan
+                kemampuan
+                kepada
+                mereka dengan karunia-Nya. Dan Allah Maha Luas (pemberian-Nya), Maha Mengetahui."
+            </p>
+            <p>
+                QS. An-Nur: 32
+            </p>
+        </div>
+    </section>
+    <!-- Cerita Cinta -->
+    <section id="story">
+
+        <h2>Cerita Cinta Kami</h2>
+        <p>Bagian ini berisi cerita tentang perjalanan cinta Anda.</p>
+        <div class="photo-section">
+            <div class="photo-card">
+                <img src="assets/img/rivan.png" alt="Foto Anda" class="photo" style="display: block;">
+                <p><strong>Rivan Prasetia, S.Kom</strong></p>
             </div>
-        </section>
-        <section id="story">
-            <div id="arab-text">
-                <p>
-                    وَاَنْكِحُوا الْاَيَامٰى مِنْكُمْ وَالصّٰلِحِيْنَ مِنْ عِبَادِكُمْ وَاِمَاۤىِٕكُمْۗ اِنْ
-                    يَّكُوْنُوْا
-                    فُقَرَاۤءَ يُغْنِهِمُ اللّٰهُ مِنْ فَضْلِهٖۗ وَاللّٰهُ وَاسِعٌ عَلِيْمٌ
-                </p>
+
+            <div class="photo-card">
+                <img src="assets/img/dalilah.png" alt="Foto Pasangan" class="photo" style="display: block;">
+                <p><strong>Dalilah</strong></p>
             </div>
-
-            <div>
-                <p>
-                    "Dan kawinkanlah orang-orang yang masih membujang di antara kamu, dan juga orang-orang yang layak
-                    (menikah)
-                    dari
-                    hamba-hamba sahayamu yang laki-laki dan perempuan. Jika mereka miskin, Allah akan memberikan
-                    kemampuan
-                    kepada
-                    mereka dengan karunia-Nya. Dan Allah Maha Luas (pemberian-Nya), Maha Mengetahui."
-                </p>
-                <p>
-                    QS. An-Nur: 32
-                </p>
-            </div>
-        </section>
-        <!-- Cerita Cinta -->
-        <section id="story">
-
-            <h2>Cerita Cinta Kami</h2>
-            <p>Bagian ini berisi cerita tentang perjalanan cinta Anda.</p>
-            <div class="photo-section">
-                <div class="photo-card">
-                    <img src="assets/img/rivan.png" alt="Foto Anda" class="photo" style="display: block;">
-                    <p><strong>Rivan Prasetia, S.Kom</strong></p>
-                </div>
-
-                <div class="photo-card">
-                    <img src="assets/img/dalilah.png" alt="Foto Pasangan" class="photo" style="display: block;">
-                    <p><strong>Dalilah</strong></p>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- Informasi Acara -->
-        <section id="event-info">
-            <h2>Akad Nikah</h2>
-            <p>07 Desember 2024 </p>
-            <p>09:00 WIB - Selesai</p>
-            <p>Masjid Jami Al-Ikhwan</p>
-            <button class="button_action" id="button-action-akad">
-                <span class="material-symbols-outlined">
-                    location_on
-                </span>
-                <span>Lihat Lokasi</span>
-            </button>
+    <!-- Informasi Acara -->
+    <section id="event-info">
+        <h2>Akad Nikah</h2>
+        <p>07 Desember 2024 </p>
+        <p>09:00 WIB - Selesai</p>
+        <p>Masjid Jami Al-Ikhwan</p>
+        <button class="button_action" id="button-action-akad">
+            <span class="material-symbols-outlined">
+                location_on
+            </span>
+            <span>Lihat Lokasi</span>
+        </button>
 
-            <h2>Resepsi Pernikahan</h2>
-            <p>07 Desember 2024</p>
-            <p>12:00 WIB - Selesai</p>
-            <p>Gg swadaya 3 kp. Cerewed rt 03/07 kel duren jaya kec bekasi timur</p>
+        <h2>Resepsi Pernikahan</h2>
+        <p>07 Desember 2024</p>
+        <p>12:00 WIB - Selesai</p>
+        <p>Gg swadaya 3 kp. Cerewed rt 03/07 kel duren jaya kec bekasi timur</p>
 
-            <button class="button_action" id="button-action-resepsi">
-                <span class="material-symbols-outlined">
-                    location_on
-                </span>
-                <span>Lihat Lokasi</span>
-            </button>
-        </section>
+        <button class="button_action" id="button-action-resepsi">
+            <span class="material-symbols-outlined">
+                location_on
+            </span>
+            <span>Lihat Lokasi</span>
+        </button>
+    </section>
 
-        <section id="map-locations">
-            <h2>Lokasi</h2>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d991.5569977742442!2d107.027256!3d-6.2336482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698e94fcdc227b%3A0x61861c239cf9ce56!2sJl.%20Pahlawan%20No.4%2C%20RT.003%2FRW.007%2C%20Duren%20Jaya%2C%20Kec.%20Bekasi%20Tim.%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017111!5e0!3m2!1sid!2sid!4v1732983888169!5m2!1sid!2sid"
-                    width="60" height="40" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+    <section id="map-locations">
+        <h2>Lokasi</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d991.5569977742442!2d107.027256!3d-6.2336482!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698e94fcdc227b%3A0x61861c239cf9ce56!2sJl.%20Pahlawan%20No.4%2C%20RT.003%2FRW.007%2C%20Duren%20Jaya%2C%20Kec.%20Bekasi%20Tim.%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017111!5e0!3m2!1sid!2sid!4v1732983888169!5m2!1sid!2sid"
+                width="60" height="40" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
-        <!-- Wedding Wish -->
-        <section id="wedding-wish">
-            <h2>Beri Ucapan Anda</h2>
-            <form id="wish-form">
-                <label for="name">Nama:</label>
-                <input type="text" id="name" placeholder="Masukkan Nama Anda" required>
-                <label for="message">Ucapan:</label>
-                <textarea id="message" placeholder="Tulis Ucapan Anda" required></textarea>
-                <button type="submit">Kirim Ucapan</button>
-            </form>
+    <!-- Wedding Wish -->
+    <section id="wedding-wish">
+        <h2>Beri Ucapan Anda</h2>
+        <form id="wish-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" placeholder="Masukkan Nama Anda" required>
+            <label for="message">Ucapan:</label>
+            <textarea id="message" placeholder="Tulis Ucapan Anda" required></textarea>
+            <button type="submit">Kirim Ucapan</button>
+        </form>
 
-            <!-- Wedding Wishes Display -->
-            <div id="wishes-container">
-                <h3>Ucapan dari Tamu</h3>
-                <ul id="wishes-list">
-                    <!-- Wishes will be displayed here -->
-                </ul>
-            </div>
-        </section>
+        <!-- Wedding Wishes Display -->
+        <div id="wishes-container">
+            <h3>Ucapan dari Tamu</h3>
+            <ul id="wishes-list">
+                <!-- Wishes will be displayed here -->
+            </ul>
+        </div>
+    </section>
     <!-- </div> -->
     <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+        import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBSDNIQMcPi1m8I5axIza3mArptUGRHtxc",
+            authDomain: "invitation-ee6ac.firebaseapp.com",
+            databaseURL: "https://invitation-ee6ac-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "invitation-ee6ac",
+            storageBucket: "invitation-ee6ac.firebasestorage.app",
+            messagingSenderId: "28111310215",
+            appId: "1:28111310215:web:04a8f09e74f7ba95395722"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        // Form submission
+        const form = document.getElementById("wish-form");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const message = document.getElementById("message").value;
+
+            try {
+                // Add a new document to Firestore
+                await addDoc(collection(db, "wedding-wishes"), {
+                    name: name,
+                    message: message,
+                    timestamp: new Date(),
+                });
+                alert("Ucapan berhasil dikirim!");
+                form.reset(); // Reset form after submission
+            } catch (error) {
+                console.error("Error adding document: ", error);
+            }
+        });
+
+        // Display wishes
+        const wishesList = document.getElementById("wishes-list");
+        const wishesCollection = collection(db, "wedding-wishes");
+
+        onSnapshot(wishesCollection, (snapshot) => {
+            wishesList.innerHTML = ""; // Clear current list
+            snapshot.docs.forEach((doc) => {
+                const wish = doc.data();
+                const listItem = document.createElement("li");
+                listItem.textContent = `${wish.name}: ${wish.message}`;
+                wishesList.appendChild(listItem);
+            });
+        });
+    </script>
+
+
+
+
+    </script>
 
 </body>
 
