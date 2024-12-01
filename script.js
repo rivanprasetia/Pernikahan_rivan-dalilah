@@ -102,6 +102,19 @@ document.addEventListener('keydown', (event) => {
         event.preventDefault();
     }
 });
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'PrintScreen') {
+        alert("Screenshot dinonaktifkan.");
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('keyup', function(e) {
+    if (e.key === 'PrintScreen') {
+        navigator.clipboard.writeText('Screenshot dinonaktifkan.');
+    }
+});
+
 
 
 
