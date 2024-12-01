@@ -23,9 +23,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    /* Semi-transparent background */
     display: none;
-    /* Hidden by default */
     justify-content: center;
     align-items: center;
     background-image: url(assets/img/Beranda.png);
@@ -55,7 +53,7 @@
 #picture-cover {
     width: 150px;
     height: 150px;
-    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -64,8 +62,6 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    border-top: 50%;
-    
 }
 
 /* Judul dialog */
@@ -125,9 +121,6 @@
     }
 }
 
-
-
-
 /* Body Style */
 body {
     background-size: cover;
@@ -140,13 +133,11 @@ body {
     padding: 20px;
 }
 
-
 @media (max-width: 768px) {
     body {
         background-size: contain;
         padding: 10px;
     }
-
 }
 
 /* Teks Arab */
@@ -200,7 +191,6 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
-    /* width: max-content fit-content;  */
     margin: 30px auto;
 }
 
@@ -209,7 +199,7 @@ section {
 #event-info h2,
 #wedding-wish h2,
 #map-locations h2,
-#bank-digital h2{
+#bank-digital h2 {
     font-size: 1.8em;
     color: var(--primary-color);
     text-align: center;
@@ -235,8 +225,6 @@ section {
     margin: 10px 0;
 }
 
-
-
 /* Footer */
 footer {
     text-align: center;
@@ -245,63 +233,33 @@ footer {
     color: white;
 }
 
-/* Photo Section */
-.photo-section {
-    display: flex;
-    gap: 20px;
-    width: min-content auto;
-    justify-content: center;
-    margin-top: 20px;
-    font-family: 'EB Garamond', serif;
-}
-
-
-.photo-card {
+/* Bank Digital Section */
+#bank-digital {
     text-align: center;
-    display: block;
+    padding: 20px;
+    background: var(--light-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
+    margin-top: 30px;
 }
 
-.photo {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    pointer-events: none;
-    /* Mencegah drag */
-    user-select: none;
-    /* Mencegah seleksi */
-    display: block;
-}
-
-/* Cover Photos */
-#cover-photos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    text-align: center;
-}
-
-#photoName img {
-    max-width: 100%;
-    height: auto;
+#bank-digital h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
     margin-bottom: 20px;
-    display: block;
 }
 
-/* bank digital */
-
-#bank-digital h3{
+#bank-digital h3 {
     font-family: 'Bad Script', cursive;
     color: var(--primary-color);
-    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .bank-container {
     display: inline-block;
     width: 150px;
-    margin: 10px;
+    margin: 10px 20px;
     padding: 10px;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -310,29 +268,30 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Gaya gambar */
 .bank-container img {
     max-width: 100%;
     height: auto;
     margin-bottom: 10px;
 }
 
-.img-logo-kartu {
-    max-width: 100%;
-    height: auto;
-    top: 0px;
-    right: 0px;
-    object-fit: cover;
-    padding: 15px;
+.bank-container p {
+    font-size: 1em;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: bold;
 }
 
-/* Hover efek */
 .bank-container:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-
+.img-logo-kartu {
+    width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+    padding: 5px;
+}
 
 /* Wedding Wishes Section */
 #wedding-wish {
@@ -395,158 +354,24 @@ footer {
 #wish-form input,
 #wish-form textarea {
     width: 100%;
-    padding: 12px;
-    margin: 10px 0 20px 0;
+    padding: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
-    box-sizing: border-box;
 }
 
-#wish-form textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
+#wish-form button {
+    padding: 10px 20px;
     background-color: var(--primary-color);
     color: white;
-    font-size: 1.2em;
     border: none;
     border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
-button:hover {
+#wish-form button:hover {
     background-color: var(--secondary-color);
-}
-
-
-
-
-
-/* -------------------------------- */
-
-
-
-
-/* Konfirmasi */
-#confirmation {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#button-action {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    border: 3px solid var(--hover-bg-color);
-    border-radius: 5px;
-    font-weight: bold;
-    background-color: var(--button-bg-color);
-    padding: 10px 20px;
-    font-size: 16px;
-    width: fit-content;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.material-symbols-outlined {
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#button-action:hover {
-    background-color: var(--hover-bg-color);
-}
-
-
-/* Map Container */
-.map-container {
-    width: 100%;
-    /* Menggunakan 100% agar lebar peta mengikuti lebar container */
-    max-width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    margin: 0 auto;
-    /* Memastikan peta terpusat di layar */
-}
-
-iframe {
-    width: 100%;
-    height: 400px;
-    border: 0;
-}
-
-/* Mengatur tampilan peta pada perangkat kecil */
-@media (max-width: 768px) {
-    .map-container {
-        width: 90%;
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #home h1 {
-        font-size: 2.5em;
-    }
-
-    #home h2 {
-        font-size: 1.5em;
-    }
-
-    #timer div {
-        font-size: 1.2em;
-    }
-
-    section {
-        padding: 15px;
-    }
-
-    #story p,
-    #event-info p {
-        font-size: 0.9em;
-    }
-
-    form label {
-        font-size: 0.9em;
-    }
-
-    button {
-        font-size: 1em;
-    }
-}
-
-/* Kontrol Suara */
-#sound-control {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-#sound-control img {
-    width: 50px;
-    height: 50px;
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-}
-
-#sound-control img:hover {
-    transform: scale(1.1);
 }
