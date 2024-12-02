@@ -281,6 +281,11 @@ footer {
   align-items: center; /* Pusatkan elemen secara horizontal */
   gap: 20px; /* Beri jarak antar elemen */
 }
+.photo-section p{
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
 
 .photo-card {
   text-align: center;
@@ -298,6 +303,9 @@ footer {
   object-fit: cover;
   border-radius: 8px; /* Tambahan estetika */
   margin: 0 auto; /* Pusatkan gambar */
+  border: 50%;
+  border-width: 5px;
+  stroke-width: 50px;
 }
 
 /* Cover Photos */
