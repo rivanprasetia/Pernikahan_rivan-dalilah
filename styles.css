@@ -220,6 +220,14 @@ section {
   margin-left:  30px;
   margin-right: 30px;
 }
+#text1 #text3 p{
+  text-align: start;
+}
+#text2 p{
+  text-align: end;
+}
+
+
 #story h2 {
   font-size: 1.8em;
   color: var(--primary-color);
