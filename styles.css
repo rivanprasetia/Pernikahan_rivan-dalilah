@@ -199,9 +199,12 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
   /* width: max-content fit-content;  */
-  max-width: 800px; /* Batas maksimal lebar section */
-  margin: 30px auto; /* Agar section berada di tengah */
-  overflow: hidden; /* Cegah elemen keluar dari area section */
+  max-width: 800px;
+  /* Batas maksimal lebar section */
+  margin: 30px auto;
+  /* Agar section berada di tengah */
+  overflow: hidden;
+  /* Cegah elemen keluar dari area section */
 }
 
 /* Judul Section */
@@ -216,14 +219,17 @@ section {
   display: flex;
   justify-content: center;
 }
+
 #story div {
-  margin-left:  30px;
+  margin-left: 30px;
   margin-right: 30px;
 }
-#text1 #text3 p{
+
+#text1 #text3 p {
   text-align: start;
 }
-#text2 p{
+
+#text2 p {
   text-align: end;
 }
 
@@ -245,6 +251,7 @@ section {
   margin: 0 auto;
   line-height: 1.8;
 }
+
 #story p {
   color: #555;
   font-size: 1em;
@@ -272,16 +279,21 @@ footer {
 
 /* Photo Section */
 .photo-section {
-  justify-content: center; /* Konten berada di tengah secara horizontal */
+  justify-content: center;
+  /* Konten berada di tengah secara horizontal */
   display: flex;
   width: min-content auto;
   justify-content: center;
   font-family: "EB Garamond", serif;
-  flex-direction: column; /* Susun elemen ke bawah */
-  align-items: center; /* Pusatkan elemen secara horizontal */
-  gap: 20px; /* Beri jarak antar elemen */
+  flex-direction: column;
+  /* Susun elemen ke bawah */
+  align-items: center;
+  /* Pusatkan elemen secara horizontal */
+  gap: 20px;
+  /* Beri jarak antar elemen */
 }
-.photo-section p{
+
+.photo-section p {
   text-align: center;
   justify-items: center;
   align-items: center;
@@ -297,12 +309,17 @@ footer {
   pointer-events: none;
   user-select: none;
   display: flex;
-  width: 100%; /* Pastikan lebar gambar tidak melampaui container */
-  max-width: 250px; /* Tetapkan batas maksimum */
-  height: auto; /* Jaga aspek rasio */
+  width: 100%;
+  /* Pastikan lebar gambar tidak melampaui container */
+  max-width: 250px;
+  /* Tetapkan batas maksimum */
+  height: auto;
+  /* Jaga aspek rasio */
   object-fit: cover;
-  border-radius: 8px; /* Tambahan estetika */
-  margin: 0 auto; /* Pusatkan gambar */
+  border-radius: 8px;
+  /* Tambahan estetika */
+  margin: 0 auto;
+  /* Pusatkan gambar */
   border: 50%;
   border-width: 5px;
   stroke-width: 50px;
@@ -600,6 +617,7 @@ iframe {
   section {
     padding: 15px;
   }
+
   #event-info p {
     font-size: 0.9em;
   }
