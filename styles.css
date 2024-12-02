@@ -216,7 +216,7 @@ section {
   display: flex;
   justify-content: center;
 }
-#story #text1 #text2 #text3{
+#story {
   padding-left: 30px;
   padding-right: 30px;
 }
