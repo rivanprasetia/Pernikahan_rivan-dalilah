@@ -216,9 +216,9 @@ section {
   display: flex;
   justify-content: center;
 }
-#story {
-  padding-left: 30px;
-  padding-right: 30px;
+#story div {
+  margin-left:  30px;
+  margin-right: 30px;
 }
 #story h2 {
   font-size: 1.8em;
