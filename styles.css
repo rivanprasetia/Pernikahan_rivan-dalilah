@@ -260,11 +260,12 @@ footer {
 
 /* Photo Section */
 .photo-section {
+    justify-content: center; /* Konten berada di tengah secara horizontal */
+    align-items: flex-end;
     display: flex;
     gap: 20px;
     width: min-content auto;
     justify-content: center;
-    margin-top: 20px;
     font-family: 'EB Garamond', serif;
 }
 
