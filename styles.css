@@ -216,6 +216,9 @@ section {
   display: flex;
   justify-content: center;
 }
+#story {
+  padding: 20px;
+}
 #story h2 {
   font-size: 1.8em;
   color: var(--primary-color);
