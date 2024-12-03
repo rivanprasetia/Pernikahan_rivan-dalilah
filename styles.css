@@ -234,18 +234,18 @@ section {
   margin-right: 30px;
 }
 
-#text1 #text3 #text2 {
+#text1 p,#text3 p,#text2 {
   text-align: start;
   margin-bottom: 20px;
 }
 
 /* Text2 Styling */
-#text2 {
+#text2 p{
   text-align: right;
 }
 
 /* Text3 Styling */
-#text3 {
+#text3 p{
   text-align: justify;
   /* Rata kanan-kiri */
 }
