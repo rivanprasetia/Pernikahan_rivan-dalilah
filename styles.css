@@ -220,19 +220,35 @@ section {
   justify-content: center;
 }
 
+#story {
+  background: var(--light-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.162);
+  max-width: 800px;
+  margin: 30px auto;
+}
+
 #story div {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-#text1 #text3 p {
+#text1 #text3 #text2 {
   text-align: start;
+  margin-bottom: 20px;
 }
 
-#text2 p {
-  text-align: end;
+/* Text2 Styling */
+#text2 {
+  text-align: right;
 }
 
+/* Text3 Styling */
+#text3 {
+  text-align: justify;
+  /* Rata kanan-kiri */
+}
 
 #story h2 {
   font-size: 1.8em;
@@ -244,12 +260,30 @@ section {
 }
 
 #story h3 {
-  color: #5a2d76;
+  /* color: #5a2d76;
   font-size: 1.08em;
   text-align: left;
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.8; */
+
+  position: absolute;
+  bottom: 10px;
+  /* Jarak dari bawah */
+  left: 50%;
+  /* Posisikan di tengah */
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  /* Latar belakang semi-transparan */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+
+
+
+
 }
 
 #story p {
@@ -301,25 +335,31 @@ footer {
 
 .photo-card {
   text-align: center;
-  display: block;
   width: 100%;
+  position: relative;
+  /* Untuk posisi elemen anak */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* Foto dan teks rata kanan */
+  margin-bottom: 20px;
 }
 
 .photo {
+
+  width: 250px;
+  /* Ukuran gambar */
+  height: auto;
+  margin-bottom: 10px;
+  /* Jarak bawah foto */
   pointer-events: none;
   user-select: none;
   display: flex;
-  width: 100%;
-  /* Pastikan lebar gambar tidak melampaui container */
   max-width: 250px;
-  /* Tetapkan batas maksimum */
   height: auto;
-  /* Jaga aspek rasio */
   object-fit: cover;
   border-radius: 8px;
-  /* Tambahan estetika */
   margin: 0 auto;
-  /* Pusatkan gambar */
   border: 50%;
   border-width: 5px;
   stroke-width: 50px;
