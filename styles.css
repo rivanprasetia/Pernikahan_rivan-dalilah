@@ -260,26 +260,18 @@ section {
 }
 
 #story h3 {
-  /* color: #5a2d76;
+  color: #5a2d76;
   font-size: 1.08em;
   text-align: left;
   max-width: 600px;
   margin: 0 auto;
-  line-height: 1.8; */
-
-  position: absolute;
+  line-height: 1.8;
   bottom: 10px;
-  /* Jarak dari bawah */
   left: 50%;
   /* Posisikan di tengah */
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  /* Latar belakang semi-transparan */
-  color: white;
+  
   padding: 5px 10px;
   border-radius: 5px;
-  font-size: 1em;
-  text-align: center;
 
 
 
