@@ -684,3 +684,33 @@ iframe {
 #sound-control img:hover {
   transform: scale(1.1);
 }
+
+/* Slider Section */
+#photo-slider {
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden; /* Sembunyikan gambar yang keluar dari area slider */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider Container */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  width: 300%; /* Lebar total slider (jumlah gambar * 100%) */
+  transition: transform 1s ease-in-out; /* Animasi transisi */
+}
+
+/* Gambar dalam Slider */
+.slider img {
+  width: 100%; /* Setiap gambar memenuhi lebar container */
+  flex-shrink: 0; /* Jangan mengecilkan gambar */
+}

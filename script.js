@@ -130,3 +130,22 @@ function copyToClipboard(elementId) {
         alert("Gagal menyalin teks: " + err);
     });
 }
+
+const slider = document.querySelector('.slider');
+const images = document.querySelectorAll('.slider img');
+let index = 0; // Indeks gambar saat ini
+
+// Fungsi untuk memperbarui posisi slider
+function updateSliderPosition() {
+    const offset = -index * 100; // Hitung offset berdasarkan indeks
+    slider.style.transform = `translateX(${offset}%)`;
+}
+
+// Fungsi untuk slider otomatis
+function autoSlide() {
+    index = (index + 1) % images.length; // Berpindah ke gambar berikutnya (loop ke awal jika di akhir)
+    updateSliderPosition();
+}
+
+// Jalankan slider otomatis setiap 5 detik
+setInterval(autoSlide, 5000); // 5000 ms = 5 detik
