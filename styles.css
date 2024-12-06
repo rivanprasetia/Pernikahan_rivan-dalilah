@@ -712,5 +712,6 @@ iframe {
 /* Gambar dalam Slider */
 .slider img {
   width: 100%; /* Setiap gambar memenuhi lebar container */
-  flex-shrink: 0; /* Jangan mengecilkan gambar */
+  max-width: 280px; /* Jangan mengecilkan gambar */
+  padding: 20px;
 }
