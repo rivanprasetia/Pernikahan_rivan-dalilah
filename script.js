@@ -150,7 +150,7 @@ function autoSlide() {
         // Kembali ke awal tanpa animasi untuk looping
         setTimeout(() => {
             slider.style.transition = 'none';
-            index = 0;
+            index = index+1;
             slider.style.transform = `translateX(0)`;
         }, 1000); // Waktu harus sama dengan durasi transisi (1s)
     }
