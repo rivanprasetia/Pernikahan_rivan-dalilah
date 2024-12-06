@@ -703,9 +703,15 @@ iframe {
 
 /* Gambar dalam Slider */
 .slider img {
+
+  max-height: 400px auto;
+  max-width: 280px auto; /* Jangan mengecilkan gambar */
+  padding: 20px;
+
     width: 100%; /* Setiap gambar memenuhi lebar container */
     flex-shrink: 0; /* Jangan mengecilkan gambar */
     transition: transform 1s ease-in-out; /* Animasi halus saat bergeser */
+
 }
 
 /* Animasi Keyframes */
