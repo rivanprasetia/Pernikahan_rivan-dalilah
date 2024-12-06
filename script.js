@@ -130,22 +130,32 @@ function copyToClipboard(elementId) {
         alert("Gagal menyalin teks: " + err);
     });
 }
-
 const slider = document.querySelector('.slider');
 const images = document.querySelectorAll('.slider img');
+const totalImages = images.length;
+
 let index = 0; // Indeks gambar saat ini
 
 // Fungsi untuk memperbarui posisi slider
 function updateSliderPosition() {
+    slider.style.transition = 'transform 1s ease-in-out'; // Animasi perpindahan
     const offset = -index * 100; // Hitung offset berdasarkan indeks
     slider.style.transform = `translateX(${offset}%)`;
 }
 
-// Fungsi untuk slider otomatis
+// Fungsi untuk slider looping
 function autoSlide() {
-    index = (index + 1) % images.length; // Berpindah ke gambar berikutnya (loop ke awal jika di akhir)
+    index++;
+    if (index === totalImages) {
+        // Kembali ke awal tanpa animasi untuk looping
+        setTimeout(() => {
+            slider.style.transition = 'none';
+            index = 0;
+            slider.style.transform = `translateX(0)`;
+        }, 1000); // Waktu harus sama dengan durasi transisi (1s)
+    }
     updateSliderPosition();
 }
 
 // Jalankan slider otomatis setiap 5 detik
-setInterval(autoSlide, 5000); // 5000 ms = 5 detik
+setInterval(autoSlide, 10000); // 5000 ms = 5 detik

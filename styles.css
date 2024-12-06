@@ -686,39 +686,30 @@ iframe {
 }
 /* Slider Section */
 #photo-slider {
-    max-width: 800px;
-    margin: 20px auto;
-    overflow: hidden; /* Sembunyikan bagian luar slider */
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden; /* Sembunyikan bagian gambar yang keluar */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Slider Container */
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 /* Slider */
 .slider {
-    display: flex;
-    width: 300%; /* Lebar total slider (jumlah gambar * 100%) */
-    animation: slide 15s infinite; /* Animasi otomatis selama 15 detik (3 gambar x 5 detik) */
+  display: flex;
+  width: calc(100% * 6); /* Lebar total (jumlah gambar x 100%) */
+  transition: transform 1s ease-in-out; /* Transisi perpindahan */
 }
 
 /* Gambar dalam Slider */
 .slider img {
-
-  max-height: 400px auto;
-  max-width: 280px auto; /* Jangan mengecilkan gambar */
-  padding: 20px;
-
-    width: 100%; /* Setiap gambar memenuhi lebar container */
-    flex-shrink: 0; /* Jangan mengecilkan gambar */
-    transition: transform 1s ease-in-out; /* Animasi halus saat bergeser */
-
+  width: 100%;
+  flex-shrink: 0; /* Jangan mengecilkan gambar */
 }
-
-/* Animasi Keyframes */
-@keyframes slide {
-    0% { transform: translateX(0); } /* Gambar pertama */
-    33.33% { transform: translateX(-100%); } /* Gambar kedua */
-    66.66% { transform: translateX(-200%); } /* Gambar ketiga */
-    100% { transform: translateX(0); } /* Kembali ke gambar pertama */
-}
-
