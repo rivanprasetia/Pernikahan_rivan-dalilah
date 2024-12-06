@@ -146,7 +146,7 @@ function updateSliderPosition() {
 // Fungsi untuk slider looping
 function autoSlide() {
     index++;
-    if (index === totalImages) {
+    if (index) {
         // Kembali ke awal tanpa animasi untuk looping
         setTimeout(() => {
             slider.style.transition = 'none';
